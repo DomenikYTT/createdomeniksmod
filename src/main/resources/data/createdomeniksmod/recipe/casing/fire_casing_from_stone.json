@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "tag": "c:stones"
+    },
+    {
+      "item": "createdomeniksmod:fire_coal"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdomeniksmod:fire_casing"
+    }
+  ]
+}

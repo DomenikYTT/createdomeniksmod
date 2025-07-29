@@ -1,6 +1,7 @@
 package de.domenikyt1.createdomeniksmod.item;
 
 import de.domenikyt1.createdomeniksmod.item.custom.BaseballBat;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
@@ -31,7 +32,16 @@ public class ModItems {
                     .rarity(Rarity.UNCOMMON)
                     .requiredFeatures()
                     .attributes(BaseballBat.createAttributes(Tiers.WOOD, 4, 6.0F)))
+
     );
+    public static final DeferredItem<Item> CHOCOLATE_COIN = ITEMS.register(
+            "chocolate_coin",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(10)
+                            .saturationModifier(3)
+                            .build())
+            ));
 
 
     public static void register(IEventBus eventBus) {
