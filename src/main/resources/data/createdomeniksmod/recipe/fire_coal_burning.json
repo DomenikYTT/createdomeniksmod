@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "minecraft:coals"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "id": "createdomeniksmod:fire_coal"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_fire_coal"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 1000,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_fire_coal"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_fire_coal"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_fire_coal"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createdomeniksmod:incomplete_fire_coal"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "itemGroup.createdomeniksmod": "Create: Domenik's Mod",
+  "item.createdomeniksmod.fire_coal": "Fire Coal",
+  "item.createdomeniksmod.incomplete_fire_coal": "Incomplete Fire Coal",
+  "item.createdomeniksmod.baseball_bat": "Baseball Bat",
+  "block.createdomeniksmod.fire_coal_block": "Fire Coal Block",
+  "block.createdomeniksmod.blasting_sail": "Blasting Sail",
+  "block.createdomeniksmod.washing_sail": "Washing Sail",
+  "tooltip.createdomeniksmod.fire_coal": "§7This item is a blaze burner Fuel!",
+  "tooltip.createdomeniksmod.fire_coal.shift_down": "§7Burntime: 2 Minutes",
+  "tooltip.createdomeniksmod.info.shift": "§8Press [§7Shift§8] for more info.",
+  "tooltip.createdomeniksmod.baseball_bat.0": "§7This Baseball Bat is owned by",
+  "tooltip.createdomeniksmod.baseball_bat.1": "§cTung Tung Tung Sahur§7!",
+  "tooltip.createdomeniksmod.credits.press_strg": "§8Press [§7Control§8] to view the Credits!",
+  "tooltip.createdomeniksmod.lavundel.credits.strg_down0": "§7This Model and texture was made by:",
+  "tooltip.createdomeniksmod.lavundel.credits.strg_down1": "§cLavundel"
+}

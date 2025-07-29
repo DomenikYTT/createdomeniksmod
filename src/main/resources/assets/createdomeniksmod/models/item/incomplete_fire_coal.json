@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "createdomeniksmod:item/incomplete_fire_coal"
+  }
+}

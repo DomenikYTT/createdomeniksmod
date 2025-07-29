@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createdomeniksmod:fire_coal"
+    },
+    {
+      "item": "create:white_sail"
+    },
+    {
+      "item": "createdomeniksmod:fire_coal"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:blasting_sail"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "createdomeniksmod:block/blasting_sail",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "createdomeniksmod:block/blasting_sail",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "createdomeniksmod:block/blasting_sail",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "createdomeniksmod:block/blasting_sail",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "createdomeniksmod:block/blasting_sail"
+    },
+    "facing=west": {
+      "model": "createdomeniksmod:block/blasting_sail",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

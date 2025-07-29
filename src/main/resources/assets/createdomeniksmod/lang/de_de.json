@@ -1,0 +1,17 @@
+{
+  "itemGroup.createdomeniksmod": "Create: Domenik's Mod",
+  "item.createdomeniksmod.fire_coal": "Feuer Kohle",
+  "item.createdomeniksmod.incomplete_fire_coal": "unfertige Feuer Kohle",
+  "item.createdomeniksmod.baseball_bat": "Baseballschläger",
+  "block.createdomeniksmod.fire_coal_block": "Feuer Kohle Block",
+  "block.createdomeniksmod.blasting_sail": "Schmelzendes Segel",
+  "block.createdomeniksmod.washing_sail": "Waschendes Segel",
+  "tooltip.createdomeniksmod.fire_coal": "§7Dieses Item ist ein Lohenbrenner Treibstoff!",
+  "tooltip.createdomeniksmod.fire_coal.shift_down": "§7Brenn-Zeit: 2 Minuten",
+  "tooltip.createdomeniksmod.info.shift": "§8Drücke [§7Umschalt§8] für mehr info.",
+  "tooltip.createdomeniksmod.baseball_bat.0": "§7Dieser Baseballschläger gehört:",
+  "tooltip.createdomeniksmod.baseball_bat.1": "§cTung Tung Tung Sahur§7!",
+  "tooltip.createdomeniksmod.credits.press_strg": "§8Drücke [§7Strg§8] um die Kredits zu sehen!",
+  "tooltip.createdomeniksmod.lavundel.credits.strg_down0": "§7Dieses Modell und die Textur wurde von",
+  "tooltip.createdomeniksmod.lavundel.credits.strg_down1": "§cLavundel §7gemacht!"
+}
