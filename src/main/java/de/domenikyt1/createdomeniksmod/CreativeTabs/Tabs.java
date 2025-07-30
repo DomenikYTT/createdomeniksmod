@@ -18,6 +18,7 @@ public class Tabs {
         output.accept(ModItems.FIRE_COAL.get());
         output.accept(ModItems.BASEBALL_BAT.get());
         output.accept(ModItems.CHOCOLATE_COIN.get());
+        output.accept(ModItems.WIZZARD_HAT.get());
     }).build());
 
 

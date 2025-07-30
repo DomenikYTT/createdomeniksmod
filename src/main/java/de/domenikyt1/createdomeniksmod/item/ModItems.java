@@ -1,19 +1,27 @@
 package de.domenikyt1.createdomeniksmod.item;
 
+import de.domenikyt1.createdomeniksmod.Createdomeniksmod;
 import de.domenikyt1.createdomeniksmod.item.custom.BaseballBat;
+import de.domenikyt1.createdomeniksmod.item.custom.HatItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import top.theillusivec4.curios.api.SlotContext;
+import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 public class ModItems {
-    private static final String MOD_ID = "createdomeniksmod";
+    private static final String MOD_ID = Createdomeniksmod.MOD_ID;
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
+    public class CurioItem implements ICurioItem {
 
-
+        @Override
+        public void curioTick(SlotContext slotContext, ItemStack stack) {
+            // ticking logic here
+        }
+    }
 
     public static final DeferredItem<Item> INCOMPLETE_FIRE_COAL = ITEMS.register(
             "incomplete_fire_coal",
@@ -42,6 +50,11 @@ public class ModItems {
                             .saturationModifier(3)
                             .build())
             ));
+
+    public static final DeferredItem<HatItem> WIZZARD_HAT = ITEMS.register(
+            "wizzard_hat",
+            () -> new HatItem(new Item.Properties())
+            );
 
 
     public static void register(IEventBus eventBus) {
