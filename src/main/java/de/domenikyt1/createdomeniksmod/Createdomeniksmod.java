@@ -3,10 +3,10 @@ package de.domenikyt1.createdomeniksmod;
 import com.mojang.logging.LogUtils;
 import de.domenikyt1.createdomeniksmod.Blocks.ModBlocks;
 import de.domenikyt1.createdomeniksmod.CreativeTabs.Tabs;
+import de.domenikyt1.createdomeniksmod.integration.curios.WizzardHatCurioRenderer;
 import de.domenikyt1.createdomeniksmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -17,10 +17,10 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
+import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(Createdomeniksmod.MOD_ID)
@@ -86,6 +86,8 @@ public class Createdomeniksmod {
             // Some client setup code
             LOGGER.info("Loading Mod...");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            CuriosRendererRegistry.register(ModItems.WIZZARD_HAT.get(),
+                    () -> new WizzardHatCurioRenderer());
         }
     }
 }

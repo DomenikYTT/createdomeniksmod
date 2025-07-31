@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_nugget"
+    },
+    {
+      "type": "fluid_tag",
+      "amount": 1000,
+      "fluid_tag": "c:chocolate"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdomeniksmod:chocolate_coin"
+    }
+  ]
+}

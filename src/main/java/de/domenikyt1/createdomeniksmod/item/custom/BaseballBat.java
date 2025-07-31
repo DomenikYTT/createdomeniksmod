@@ -2,6 +2,7 @@ package de.domenikyt1.createdomeniksmod.item.custom;
 
 import java.util.List;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
@@ -70,7 +71,7 @@ public class BaseballBat extends TieredItem {
         if(Screen.hasShiftDown()) {
             tooltipComponents.add(Component.empty());
             tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.baseball_bat.0"));
-            tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.baseball_bat.1"));
+            tooltipComponents.add(Component.literal("§c" + Minecraft.getInstance().getUser().getName()));
             if(Screen.hasControlDown()) {
                 tooltipComponents.add(Component.empty());
                 tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.lavundel.credits.strg_down0"));
