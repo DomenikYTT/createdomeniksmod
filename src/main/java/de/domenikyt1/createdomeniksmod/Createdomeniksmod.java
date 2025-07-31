@@ -3,7 +3,7 @@ package de.domenikyt1.createdomeniksmod;
 import com.mojang.logging.LogUtils;
 import de.domenikyt1.createdomeniksmod.Blocks.ModBlocks;
 import de.domenikyt1.createdomeniksmod.CreativeTabs.Tabs;
-import de.domenikyt1.createdomeniksmod.integration.curios.WizzardHatCurioRenderer;
+/*import de.domenikyt1.createdomeniksmod.integration.curios.WizzardHatCurioRenderer; */
 import de.domenikyt1.createdomeniksmod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -86,8 +86,8 @@ public class Createdomeniksmod {
             // Some client setup code
             LOGGER.info("Loading Mod...");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-            CuriosRendererRegistry.register(ModItems.WIZZARD_HAT.get(),
-                    () -> new WizzardHatCurioRenderer());
+            /*CuriosRendererRegistry.register(ModItems.WIZZARD_HAT.get(),
+                    () -> new WizzardHatCurioRenderer()); */
         }
     }
 }
