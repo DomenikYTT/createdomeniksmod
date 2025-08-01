@@ -39,14 +39,14 @@ public class ModBlocks {
                     .strength(2, 1)
                     .sound(SoundType.WOOD)
                     .noOcclusion()
-            ));
+            ));/*
     public static final DeferredBlock<Block> FIRE_CASING = registerBlock(
             "fire_casing",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3, 1)
                     .sound(SoundType.STONE)
 
-            ));
+            ));*/
 
 
 

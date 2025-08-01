@@ -1,6 +1,6 @@
 package de.domenikyt1.createdomeniksmod.item;
 
-import de.domenikyt1.createdomeniksmod.Createdomeniksmod;
+import de.domenikyt1.createdomeniksmod.CDM;
 import de.domenikyt1.createdomeniksmod.item.custom.BaseballBat;
 import de.domenikyt1.createdomeniksmod.item.custom.HatItem;
 import net.minecraft.world.food.FoodProperties;
@@ -12,7 +12,7 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 public class ModItems {
-    private static final String MOD_ID = Createdomeniksmod.MOD_ID;
+    private static final String MOD_ID = CDM.MOD_ID;
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
     public class CurioItem implements ICurioItem {

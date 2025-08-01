@@ -1,10 +1,14 @@
 package de.domenikyt1.createdomeniksmod;
 
 import com.mojang.logging.LogUtils;
+import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import de.domenikyt1.createdomeniksmod.Blocks.ModBlocks;
+import de.domenikyt1.createdomeniksmod.CreateBlock.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.CreativeTabs.Tabs;
 /*import de.domenikyt1.createdomeniksmod.integration.curios.WizzardHatCurioRenderer; */
 import de.domenikyt1.createdomeniksmod.item.ModItems;
+import de.domenikyt1.createdomeniksmod.registry.custom.CDMRegistrate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Blocks;
@@ -20,25 +24,28 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
-import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(Createdomeniksmod.MOD_ID)
-public class Createdomeniksmod {
+@Mod(CDM.MOD_ID)
+public class CDM {
 
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "createdomeniksmod";
+
+    public static CDMRegistrate REGISTRATE = CDMRegistrate.create(MOD_ID);
+
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-   // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "ceatedomeniksmod" namespace
+    // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "ceatedomeniksmod" namespace
 
     // Creates a creative tab with the id "ceatedomeniksmod:example_tab" for the example item, that is placed after the combat tab
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
-    public Createdomeniksmod(IEventBus modEventBus, ModContainer modContainer) {
+    public CDM(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        REGISTRATE.registerEventListeners(modEventBus);
         // Register the Deferred Register to the mod event bus so blocks get registered
         // Register the Deferred Register to the mod event bus so items get registered
         LOGGER.info("Loading All Creative Tabs...");
@@ -47,6 +54,8 @@ public class Createdomeniksmod {
         ModBlocks.register(modEventBus);
         LOGGER.info("Loading Items...");
         ModItems.register(modEventBus);
+        LOGGER.info("Loading Create Blocks...");
+        CDMBlocks.register();
         // Register the Deferred Register to the mod event bus so tabs get registered
 
         // Register ourselves for server and other game events we are interested in.
@@ -91,3 +100,4 @@ public class Createdomeniksmod {
         }
     }
 }
+
