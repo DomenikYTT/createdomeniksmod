@@ -16,6 +16,7 @@ public class Tags {
     }
     public static class Items {
         public static final TagKey<Item> HATS = createTag("hats");
+        public static final TagKey<Item> BANDANAS = createTag("bandanas");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CDM.MOD_ID, name));

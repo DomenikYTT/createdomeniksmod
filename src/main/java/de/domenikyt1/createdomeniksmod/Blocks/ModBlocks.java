@@ -20,11 +20,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> FIRE_COAL_BLOCK = registerBlock("fire_coal_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2)
-                    .requiresCorrectToolForDrops()
+                    .strength(2, 1)
                     .sound(SoundType.STONE)
             ));
-
     public static final DeferredBlock<Block> BLASTING_SAIL = registerBlock(
             "blasting_sail",
             () -> new SailBlock(BlockBehaviour.Properties.of()

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "create:empty_blaze_burner"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 1000,
+      "fluid": "create:honey"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:blaze_burner"
+    }
+  ]
+}

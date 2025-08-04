@@ -1,16 +1,14 @@
 package de.domenikyt1.createdomeniksmod;
 
 import com.mojang.logging.LogUtils;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import de.domenikyt1.createdomeniksmod.Blocks.ModBlocks;
 import de.domenikyt1.createdomeniksmod.CreateBlock.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.CreativeTabs.Tabs;
-/*import de.domenikyt1.createdomeniksmod.integration.curios.WizzardHatCurioRenderer; */
 import de.domenikyt1.createdomeniksmod.item.ModItems;
 import de.domenikyt1.createdomeniksmod.registry.custom.CDMRegistrate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -95,9 +93,13 @@ public class CDM {
             // Some client setup code
             LOGGER.info("Loading Mod...");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-            /*CuriosRendererRegistry.register(ModItems.WIZZARD_HAT.get(),
-                    () -> new WizzardHatCurioRenderer()); */
         }
+    }
+    public static ResourceLocation loc(String loc) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, loc);
+    }
+    public static ResourceLocation emptyLoc() {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, "empty");
     }
 }
 

@@ -13,6 +13,7 @@
   "block.createdomeniksmod.blasting_sail": "Schmelzendes Segel",
   "block.createdomeniksmod.washing_sail": "Waschendes Segel",
   "block.createdomeniksmod.fire_casing": "Feuergehäuse",
+  "block.createdomeniksmod.template_casing": "Vorlagen Gehäuse",
 
 
   "tooltip.createdomeniksmod.fire_coal": "§7Dieses Item ist ein Lohenbrenner Treibstoff!",

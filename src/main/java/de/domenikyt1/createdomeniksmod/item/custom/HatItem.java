@@ -1,6 +1,8 @@
 package de.domenikyt1.createdomeniksmod.item.custom;
 
 import com.google.common.base.Suppliers;
+import de.domenikyt1.createdomeniksmod.CDM;
+import de.domenikyt1.createdomeniksmod.item.accessories.AccessoryItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
@@ -24,16 +26,40 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraft.world.phys.AABB;
 
+
 import java.util.List;
 import java.util.function.Supplier;
 
-public class HatItem extends Item implements Equipable {
+public class HatItem extends AccessoryItem implements Equipable  {
+    protected ResourceLocation HAT_LOCATION;
+
+
+    public HatItem(String hatLocation, Properties properties, Supplier<ItemAttributeModifiers> defaultModifiers) {
+        this(ResourceLocation.fromNamespaceAndPath(CDM.MOD_ID, hatLocation), properties);
+        this.defaultModifiers = defaultModifiers;
+    }
+
+    public HatItem(ResourceLocation hatLocation, Properties properties) {
+        super(properties);
+        this.setRenderTexture(hatLocation.getNamespace(), hatLocation.getPath());
+    }
+
+
+    public void setRenderTexture(String modId, String registryName) {
+        this.HAT_LOCATION = ResourceLocation.fromNamespaceAndPath(modId, "textures/models/item/" + registryName + ".png");
+    }
+
+    public ResourceLocation getHatTexture() {
+        return this.HAT_LOCATION;
+    }
+
+
     public static final DispenseItemBehavior DISPENSE_ITEM_BEHAVIOR = new DefaultDispenseItemBehavior() {
         protected ItemStack execute(BlockSource p_302434_, ItemStack p_40409_) {
             return ArmorItem.dispenseArmor(p_302434_, p_40409_) ? p_40409_ : super.execute(p_302434_, p_40409_);
         }
     };
-    private final Supplier<ItemAttributeModifiers> defaultModifiers;
+    private Supplier<ItemAttributeModifiers> defaultModifiers;
 
     public static boolean dispenseArmor(BlockSource p_302421_, ItemStack p_40400_) {
         BlockPos blockpos = p_302421_.pos().relative((Direction)p_302421_.state().getValue(DispenserBlock.FACING));

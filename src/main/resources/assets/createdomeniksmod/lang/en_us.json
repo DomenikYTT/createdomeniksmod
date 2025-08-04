@@ -7,12 +7,14 @@
   "item.createdomeniksmod.baseball_bat": "Baseball Bat",
   "item.createdomeniksmod.chocolate_coin": "Chocolate Coin",
   "item.createdomeniksmod.wizzard_hat": "Wizzard Hat",
+  "item.createdomeniksmod.bandana": "CDM Bandana",
 
 
   "block.createdomeniksmod.fire_coal_block": "Fire Coal Block",
   "block.createdomeniksmod.blasting_sail": "Blasting Sail",
   "block.createdomeniksmod.washing_sail": "Washing Sail",
   "block.createdomeniksmod.fire_casing": "Fire Casing",
+  "block.createdomeniksmod.template_casing": "Template Casing",
 
 
   "tooltip.createdomeniksmod.fire_coal": "§7This item is a blaze burner Fuel!",
