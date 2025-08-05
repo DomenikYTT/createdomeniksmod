@@ -1,9 +1,14 @@
 {
   "type": "create:item_application",
   "ingredients": [
-    {
-      "tag": "c:stones"
-    },
+    [
+      {
+        "tag": "c:stones"
+      },
+      {
+        "tag": "c:cobblestones"
+      }
+    ],
     {
       "item": "createdomeniksmod:fire_coal"
     }

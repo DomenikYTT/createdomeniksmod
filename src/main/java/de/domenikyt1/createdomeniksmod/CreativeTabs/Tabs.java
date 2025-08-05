@@ -29,6 +29,10 @@ public class Tabs {
         output.accept(ModBlocks.WASHING_SAIL.get());
         output.accept(ModBlocks.BLASTING_SAIL.get());
         output.accept(CDMBlocks.FIRE_CASING.get());
-        output.accept(CDMBlocks.TEMPLATE_CASING.get());
+        output.accept(CDMBlocks.RED_CASING.get());
+        output.accept(CDMBlocks.BLUE_CASING.get());
+        output.accept(CDMBlocks.RGB_CASING.get());
+        output.accept(CDMBlocks.BLACK_CASING.get());
+        output.accept(CDMBlocks.GRAY_CASING.get());
     }).build());
 }

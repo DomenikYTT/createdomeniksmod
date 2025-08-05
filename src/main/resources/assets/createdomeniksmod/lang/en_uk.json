@@ -14,6 +14,11 @@
   "block.createdomeniksmod.washing_sail": "Washing Sail",
   "block.createdomeniksmod.fire_casing": "Fire Casing",
   "block.createdomeniksmod.template_casing": "Template Casing",
+  "block.createdomeniksmod.rgb_casing": "RGB Casing",
+  "block.createdomeniksmod.red_casing": "Red Casing",
+  "block.createdomeniksmod.black_casing": "Black Casing",
+  "block.createdomeniksmod.gray_casing": "Gray Casing",
+  "block.createdomeniksmod.blue_casing": "Blue Casing",
 
 
   "tooltip.createdomeniksmod.fire_coal": "§7This item is a blaze burner Fuel!",

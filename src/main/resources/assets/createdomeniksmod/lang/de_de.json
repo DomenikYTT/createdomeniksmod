@@ -14,6 +14,12 @@
   "block.createdomeniksmod.washing_sail": "Waschendes Segel",
   "block.createdomeniksmod.fire_casing": "Feuergehäuse",
   "block.createdomeniksmod.template_casing": "Vorlagen Gehäuse",
+  "block.createdomeniksmod.rgb_casing": "RGB Gehäuse",
+  "block.createdomeniksmod.red_casing": "Rotes Gehäuse",
+  "block.createdomeniksmod.black_casing": "Schwarzes Gehäuse",
+  "block.createdomeniksmod.gray_casing": "Graues Gehäuse",
+  "block.createdomeniksmod.blue_casing": "Blaues gehäuse",
+
 
 
   "tooltip.createdomeniksmod.fire_coal": "§7Dieses Item ist ein Lohenbrenner Treibstoff!",

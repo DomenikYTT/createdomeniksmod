@@ -1,0 +1,27 @@
+{
+  "type": "rechiseled:chiseling",
+  "overwrite": false,
+  "entries": [
+    {
+      "item": "createdomeniksmod:fire_casing"
+    },
+    {
+      "item": "createdomeniksmod:template_casing"
+    },
+    {
+      "item": "createdomeniksmod:rgb_casing"
+    },
+    {
+      "item": "createdomeniksmod:black_casing"
+    },
+    {
+      "item": "createdomeniksmod:gray_casing"
+    },
+    {
+      "item": "createdomeniksmod:blue_casing"
+    },
+    {
+      "item": "createdomeniksmod:red_casing"
+    }
+  ]
+}

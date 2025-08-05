@@ -9,6 +9,12 @@ public class CDMTextureShifts {
 
     public static final CTSpriteShiftEntry FIRE_CASING = ct("fire_casing");
     public static final CTSpriteShiftEntry TEMPLATE_CASING = ct("template_casing");
+    public static final CTSpriteShiftEntry RGB_CASING = ct("rgb_casing");
+    public static final CTSpriteShiftEntry BLACK_CASING = ct("black_casing");
+    public static final CTSpriteShiftEntry BLUE_CASING = ct("blue_casing");
+    public static final CTSpriteShiftEntry GRAY_CASING = ct("gray_casing");
+    public static final CTSpriteShiftEntry RED_CASING = ct("red_casing");
+
 
 
 

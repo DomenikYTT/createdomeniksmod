@@ -9,18 +9,22 @@ import de.domenikyt1.createdomeniksmod.registry.custom.CDMRegistrate;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -35,6 +39,8 @@ public class CDM {
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "ceatedomeniksmod" namespace
+    public static final DeferredRegister<Item> ITEMS =
+            DeferredRegister.create(BuiltInRegistries.ITEM, MOD_ID);
 
     // Creates a creative tab with the id "ceatedomeniksmod:example_tab" for the example item, that is placed after the combat tab
 
@@ -54,6 +60,13 @@ public class CDM {
         ModItems.register(modEventBus);
         LOGGER.info("Loading Create Blocks...");
         CDMBlocks.register();
+        if(ModList.get().isLoaded("rechiseled")) {
+            LOGGER.info("Loading Rechiseled Compat...");
+        } else {
+            LOGGER.info("Rechiseled is not intsalled...");
+            LOGGER.info("Skipping Rechiseled Compat...");
+        }
+
         // Register the Deferred Register to the mod event bus so tabs get registered
 
         // Register ourselves for server and other game events we are interested in.
@@ -95,6 +108,16 @@ public class CDM {
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
         }
     }
+    public class CreativeTabEvents {
+
+        @SubscribeEvent
+        public static void addItemsToTab(BuildCreativeModeTabContentsEvent event) {
+            if (ModList.get().isLoaded("rechiseled")) {
+                Item rgbChisel = BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(MOD_ID, "rgb_chisel"));
+            }
+        }
+    }
+
     public static ResourceLocation loc(String loc) {
         return ResourceLocation.fromNamespaceAndPath(MOD_ID, loc);
     }

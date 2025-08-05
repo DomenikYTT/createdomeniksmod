@@ -53,7 +53,6 @@ public class ModItems {
                     .stacksTo(1)
             ));
 
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
