@@ -22,6 +22,15 @@
     },
     {
       "item": "createdomeniksmod:red_casing"
+    },
+    {
+      "item": "createdomeniksmod:pink_casing"
+    },
+    {
+      "item": "createdomeniksmod:yellow_casing"
+    },
+    {
+      "item": "createdomeniksmod:lime_casing"
     }
   ]
 }

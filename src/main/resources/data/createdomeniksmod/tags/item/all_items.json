@@ -2,8 +2,7 @@
   "values": [
     "createdomeniksmod:blasting_sail",
     "createdomeniksmod:washing_sail",
-    "createdomeniksmod:fire_casing",
-    "createdomeniksmod:template_casing",
+
     "createdomeniksmod:chocolate_coin",
     "createdomeniksmod:wizzard_hat",
     "createdomeniksmod:bandana",
@@ -11,11 +10,17 @@
     "createdomeniksmod:fire_coal",
     "createdomeniksmod:fire_coal_block",
     "createdomeniksmod:incomplete_fire_coal",
+    "createdomeniksmod:rgb_block",
 
     "createdomeniksmod:blue_casing",
     "createdomeniksmod:rgb_casing",
     "createdomeniksmod:black_casing",
     "createdomeniksmod:red_casing",
-    "createdomeniksmod:gray_casing"
+    "createdomeniksmod:gray_casing",
+    "createdomeniksmod:yellow_casing",
+    "createdomeniksmod:lime_casing",
+    "createdomeniksmod:pink_casing",
+    "createdomeniksmod:fire_casing",
+    "createdomeniksmod:template_casing"
   ]
 }

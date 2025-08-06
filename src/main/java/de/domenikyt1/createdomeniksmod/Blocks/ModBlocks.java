@@ -37,15 +37,17 @@ public class ModBlocks {
                     .strength(2, 1)
                     .sound(SoundType.WOOD)
                     .noOcclusion()
-            ));/*
-    public static final DeferredBlock<Block> FIRE_CASING = registerBlock(
-            "fire_casing",
+            ));
+    public static final DeferredBlock<Block> RGB_BLOCK = registerBlock(
+            "rgb_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3, 1)
                     .sound(SoundType.STONE)
-
-            ));*/
-
+            ));
+    public static final DeferredBlock<Block> REALISM_CASING = registerBlock(
+            "realism_casing",
+            ()-> new Block(BlockBehaviour.Properties.of()
+                    .sound(SoundType.WOOD)
+            ));
 
 
 

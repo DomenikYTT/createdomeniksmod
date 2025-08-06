@@ -14,6 +14,9 @@ public class CDMTextureShifts {
     public static final CTSpriteShiftEntry BLUE_CASING = ct("blue_casing");
     public static final CTSpriteShiftEntry GRAY_CASING = ct("gray_casing");
     public static final CTSpriteShiftEntry RED_CASING = ct("red_casing");
+    public static final CTSpriteShiftEntry PINK_CASING = ct("pink_casing");
+    public static final CTSpriteShiftEntry YELLOW_CASING = ct("yellow_casing");
+    public static final CTSpriteShiftEntry LIME_CASING = ct("lime_casing");
 
 
 
@@ -21,7 +24,7 @@ public class CDMTextureShifts {
 
     private static CTSpriteShiftEntry ct(String name) {
         return CTSpriteShifter.getCT(AllCTTypes.OMNIDIRECTIONAL,
-                ResourceLocation.fromNamespaceAndPath("createdomeniksmod","block/" + name),
-                ResourceLocation.fromNamespaceAndPath("createdomeniksmod","block/" + name + "_connected"));
+                ResourceLocation.fromNamespaceAndPath("createdomeniksmod","block/casings/" + name),
+                ResourceLocation.fromNamespaceAndPath("createdomeniksmod","block/casings/" + name + "_connected"));
     }
 }

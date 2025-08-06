@@ -79,6 +79,30 @@ public class CDMBlocks {
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
 
+    public static final BlockEntry<CustomCasingBlock> PINK_CASING =
+            REGISTRATE.block("pink_casing", CustomCasingBlock::new)
+                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.PINK_CASING))
+                    .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
+                    .item().build()
+                    .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
+                    .register();
+
+    public static final BlockEntry<CustomCasingBlock> YELLOW_CASING =
+            REGISTRATE.block("yellow_casing", CustomCasingBlock::new)
+                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.YELLOW_CASING))
+                    .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
+                    .item().build()
+                    .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
+                    .register();
+
+    public static final BlockEntry<CustomCasingBlock> LIME_CASING =
+            REGISTRATE.block("lime_casing", CustomCasingBlock::new)
+                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.LIME_CASING))
+                    .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
+                    .item().build()
+                    .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
+                    .register();
+
 
 
 

@@ -34,5 +34,10 @@ public class Tabs {
         output.accept(CDMBlocks.RGB_CASING.get());
         output.accept(CDMBlocks.BLACK_CASING.get());
         output.accept(CDMBlocks.GRAY_CASING.get());
+        output.accept(CDMBlocks.PINK_CASING.get());
+        output.accept(CDMBlocks.LIME_CASING.get());
+        output.accept(CDMBlocks.YELLOW_CASING.get());
+        output.accept(ModBlocks.RGB_BLOCK.get());
+        output.accept(ModBlocks.REALISM_CASING.get());
     }).build());
 }

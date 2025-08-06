@@ -20,6 +20,10 @@
   "block.createdomeniksmod.black_casing": "Black Casing",
   "block.createdomeniksmod.gray_casing": "Gray Casing",
   "block.createdomeniksmod.blue_casing": "Blue Casing",
+  "block.createdomeniksmod.pink_casing": "Pink Casing",
+  "block.createdomeniksmod.lime_casing": "Lime Casing",
+  "block.createdomeniksmod.yellow_casing": "Yellow Casing",
+  "block.createdomeniksmod.rgb_block": "RGB Block",
 
 
   "tooltip.createdomeniksmod.fire_coal": "§7This item is a blaze burner Fuel!",

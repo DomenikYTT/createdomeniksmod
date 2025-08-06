@@ -9,6 +9,10 @@
     "createdomeniksmod:rgb_casing",
     "createdomeniksmod:black_casing",
     "createdomeniksmod:red_casing",
-    "createdomeniksmod:gray_casing"
+    "createdomeniksmod:gray_casing",
+    "createdomeniksmod:yellow_casing",
+    "createdomeniksmod:lime_casing",
+    "createdomeniksmod:pink_casing",
+    "createdomeniksmod:rgb_block"
   ]
 }

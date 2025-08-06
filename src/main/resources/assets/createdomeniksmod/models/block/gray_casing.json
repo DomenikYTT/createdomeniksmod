@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "createdomeniksmod:block/gray_casing"
+    "all": "createdomeniksmod:block/casings/gray_casing"
   }
 }

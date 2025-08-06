@@ -1,0 +1,12 @@
+{
+  "type": "rechiseled:chiseling",
+  "overwrite": false,
+  "entries": [
+    {
+      "item": "createdomeniksmod:rgb_block"
+    },
+    {
+      "item": "createdomeniksmod:rgb_casing"
+    }
+  ]
+}
