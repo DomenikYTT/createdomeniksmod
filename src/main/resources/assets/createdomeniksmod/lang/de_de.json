@@ -23,6 +23,7 @@
   "block.createdomeniksmod.lime_casing": "Hell-Grünes Gehäuse",
   "block.createdomeniksmod.yellow_casing": "Gelbes Gehäuse",
   "block.createdomeniksmod.rgb_block": "RGB Block",
+  "block.createdomeniksmod.cooltendo_swatch": "Cooltendo Swatch",
 
 
 
@@ -31,13 +32,10 @@
   "tooltip.createdomeniksmod.info.shift": "§8Drücke [§7Umschalt§8] für mehr info.",
   "tooltip.createdomeniksmod.baseball_bat.0": "§7Dieser Baseballschläger gehört:",
   "tooltip.createdomeniksmod.baseball_bat.1": "§cTung Tung Tung Sahur§7!",
+  "tooltip.createdomeniksmod.Casings.shift_down": "du kannst hiermit nichts verdecken!",
 
 
   "tooltip.createdomeniksmod.credits.press_strg": "§8Drücke [§7Strg§8] um die Kredits zu sehen!",
   "tooltip.createdomeniksmod.lavundel.credits.strg_down0": "§7Dieses Modell und die Textur wurde von",
   "tooltip.createdomeniksmod.lavundel.credits.strg_down1": "§cLavundel §7gemacht!",
-
-
-  "tab.blocks": "Create: Domenik's Mod (Blöcke)",
-  "tab.items": "Create: Domenik's Mod (Items)"
 }

@@ -1,6 +1,7 @@
 package de.domenikyt1.createdomeniksmod.Blocks;
 
 import de.domenikyt1.createdomeniksmod.Blocks.custom.SailBlock;
+import de.domenikyt1.createdomeniksmod.Blocks.custom.cooltendo;
 import de.domenikyt1.createdomeniksmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -47,6 +48,13 @@ public class ModBlocks {
             "realism_casing",
             ()-> new Block(BlockBehaviour.Properties.of()
                     .sound(SoundType.WOOD)
+            ));
+
+    public static final DeferredBlock<cooltendo> COOLTENDO_SWATCH = registerBlock(
+            "cooltendo_swatch",
+            () -> new cooltendo(BlockBehaviour.Properties.of()
+                    .noOcclusion()
+                    .sound(SoundType.METAL)
             ));
 
 

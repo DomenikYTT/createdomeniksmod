@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "createdomeniksmod:block/cooltendo_swatch",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "createdomeniksmod:block/cooltendo_swatch"
+    },
+    "facing=south": {
+      "model": "createdomeniksmod:block/cooltendo_swatch",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "createdomeniksmod:block/cooltendo_swatch",
+      "y": 270
+    }
+  }
+}

@@ -21,9 +21,6 @@ repositories {
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
-    maven { url 'https://maven.wispforest.io/releases' }
-    maven { url 'https://maven.su5ed.dev/releases' }
-    maven { url "https://www.cursemaven.com" }
         mavenLocal()
 }
 
@@ -119,8 +116,6 @@ dependencies {
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
     // at runtime, use the full JEI jar for NeoForge
     runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
-
-    implementation("io.wispforest:accessories-neoforge:${project.accessories_version}")
 
 }
 

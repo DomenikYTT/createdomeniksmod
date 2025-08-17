@@ -24,6 +24,7 @@
   "block.createdomeniksmod.lime_casing": "Lime Casing",
   "block.createdomeniksmod.yellow_casing": "Yellow Casing",
   "block.createdomeniksmod.rgb_block": "RGB Block",
+  "block.createdomeniksmod.cooltendo_swatch": "Cooltendo Swatch",
 
 
   "tooltip.createdomeniksmod.fire_coal": "§7This item is a blaze burner Fuel!",
@@ -31,6 +32,7 @@
   "tooltip.createdomeniksmod.info.shift": "§8Press [§7Shift§8] for more info.",
   "tooltip.createdomeniksmod.baseball_bat.0": "§7This Baseball Bat is owned by",
   "tooltip.createdomeniksmod.baseball_bat.1": "§cTung Tung Tung Sahur§7!",
+  "tooltip.createdomeniksmod.Casings.shift_down": "This doesn't work to encase somethings.",
 
 
   "tooltip.createdomeniksmod.credits.press_strg": "§8Press [§7Control§8] to view the Credits!",

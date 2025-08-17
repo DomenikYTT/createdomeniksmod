@@ -22,7 +22,6 @@ import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
@@ -106,15 +105,6 @@ public class CDM {
             // Some client setup code
             LOGGER.info("Loading Mod...");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-        }
-    }
-    public class CreativeTabEvents {
-
-        @SubscribeEvent
-        public static void addItemsToTab(BuildCreativeModeTabContentsEvent event) {
-            if (ModList.get().isLoaded("rechiseled")) {
-                Item rgbChisel = BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(MOD_ID, "rgb_chisel"));
-            }
         }
     }
 

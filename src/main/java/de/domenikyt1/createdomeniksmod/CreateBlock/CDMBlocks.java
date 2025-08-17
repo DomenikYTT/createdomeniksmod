@@ -1,22 +1,15 @@
 package de.domenikyt1.createdomeniksmod.CreateBlock;
 
 import com.simibubi.create.AllTags;
-import com.simibubi.create.content.decoration.encasing.CasingBlock;
 import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import de.domenikyt1.createdomeniksmod.Blocks.custom.CustomCasingBlock;
 import de.domenikyt1.createdomeniksmod.registry.custom.CDMTextureShifts;
 
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
-import com.tterrag.registrate.providers.loot.RegistrateBlockLootTables;
 
 
-import java.util.function.Supplier;
-
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
-import static com.simibubi.create.foundation.data.ModelGen.customItemModel;
 import static com.simibubi.create.foundation.data.TagGen.axeOrPickaxe;
 import static de.domenikyt1.createdomeniksmod.CDM.REGISTRATE;
 
@@ -102,6 +95,11 @@ public class CDMBlocks {
                     .item().build()
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
+
+
+
+
+
 
 
 
