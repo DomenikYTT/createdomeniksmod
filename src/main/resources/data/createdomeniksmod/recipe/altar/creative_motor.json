@@ -1,0 +1,37 @@
+{
+  "type": "createdomeniksmod:pedestal_crafting",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_star"
+    },
+
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    }
+  ],
+  "entityType": "minecraft:iron_golem",
+  "result": {
+    "id": "create:creative_motor"
+  }
+}

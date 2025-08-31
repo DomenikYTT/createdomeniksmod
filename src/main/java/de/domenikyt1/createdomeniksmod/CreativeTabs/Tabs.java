@@ -1,9 +1,8 @@
 package de.domenikyt1.createdomeniksmod.CreativeTabs;
 
-import de.domenikyt1.createdomeniksmod.Blocks.ModBlocks;
+import de.domenikyt1.createdomeniksmod.block.ModBlocks;
 import de.domenikyt1.createdomeniksmod.CDM;
-import de.domenikyt1.createdomeniksmod.CreateBlock.CDMBlocks;
-import de.domenikyt1.createdomeniksmod.Tags;
+import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -38,5 +37,7 @@ public class Tabs {
         output.accept(ModBlocks.RGB_BLOCK.get());
         output.accept(ModBlocks.REALISM_CASING.get());
         output.accept(ModBlocks.COOLTENDO_SWATCH.get());
+        output.accept(ModBlocks.SACRIFICE_ALTAR.get());
+        output.accept(ModBlocks.PEDESTAL.get());
     }).build());
 }

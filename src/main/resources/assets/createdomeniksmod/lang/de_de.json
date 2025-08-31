@@ -10,6 +10,8 @@
 
 
   "block.createdomeniksmod.fire_coal_block": "Feuer Kohle Block",
+  "block.createdomeniksmod.pedestal": "Sockel",
+  "block.createdomeniksmod.sacrifice_altar": "Opferungs Altar",
   "block.createdomeniksmod.blasting_sail": "Schmelzendes Segel",
   "block.createdomeniksmod.washing_sail": "Waschendes Segel",
   "block.createdomeniksmod.fire_casing": "Feuergehäuse",
@@ -24,6 +26,7 @@
   "block.createdomeniksmod.yellow_casing": "Gelbes Gehäuse",
   "block.createdomeniksmod.rgb_block": "RGB Block",
   "block.createdomeniksmod.cooltendo_swatch": "Cooltendo Swatch",
+  "block.createdomeniksmod.realism_casing": "Realistisches Gehäuse",
 
 
 
@@ -37,5 +40,5 @@
 
   "tooltip.createdomeniksmod.credits.press_strg": "§8Drücke [§7Strg§8] um die Kredits zu sehen!",
   "tooltip.createdomeniksmod.lavundel.credits.strg_down0": "§7Dieses Modell und die Textur wurde von",
-  "tooltip.createdomeniksmod.lavundel.credits.strg_down1": "§cLavundel §7gemacht!",
+  "tooltip.createdomeniksmod.lavundel.credits.strg_down1": "§cLavundel §7gemacht!"
 }

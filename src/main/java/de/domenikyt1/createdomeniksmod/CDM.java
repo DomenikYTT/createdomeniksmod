@@ -1,30 +1,39 @@
 package de.domenikyt1.createdomeniksmod;
 
 import com.mojang.logging.LogUtils;
-import de.domenikyt1.createdomeniksmod.Blocks.ModBlocks;
-import de.domenikyt1.createdomeniksmod.CreateBlock.CDMBlocks;
+import com.tterrag.registrate.util.entry.RegistryEntry;
+import de.domenikyt1.createdomeniksmod.block.ModBlocks;
+import de.domenikyt1.createdomeniksmod.block.entity.ModBlockEntities;
+import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.CreativeTabs.Tabs;
 import de.domenikyt1.createdomeniksmod.item.ModItems;
+import de.domenikyt1.createdomeniksmod.recipe.ModRecipes;
 import de.domenikyt1.createdomeniksmod.registry.custom.CDMRegistrate;
-import net.minecraft.client.Minecraft;
+import de.domenikyt1.createdomeniksmod.screen.ModMenuTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CDM.MOD_ID)
@@ -54,17 +63,21 @@ public class CDM {
         LOGGER.info("Loading All Creative Tabs...");
         Tabs.TAB.register(modEventBus);
         LOGGER.info("Loading Blocks");
+        CDMBlocks.register();
         ModBlocks.register(modEventBus);
         LOGGER.info("Loading Items...");
         ModItems.register(modEventBus);
-        LOGGER.info("Loading Create Blocks...");
-        CDMBlocks.register();
         if(ModList.get().isLoaded("rechiseled")) {
             LOGGER.info("Loading Rechiseled Compat...");
         } else {
             LOGGER.info("Rechiseled is not intsalled...");
             LOGGER.info("Skipping Rechiseled Compat...");
         }
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         // Register the Deferred Register to the mod event bus so tabs get registered
 
@@ -97,22 +110,12 @@ public class CDM {
         LOGGER.info("you are cool :D");
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            // Some client setup code
-            LOGGER.info("Loading Mod...");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-        }
-    }
 
     public static ResourceLocation loc(String loc) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, loc);
+        return ResourceLocation.fromNamespaceAndPath(CDM.MOD_ID, loc);
     }
     public static ResourceLocation emptyLoc() {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, "empty");
+        return ResourceLocation.fromNamespaceAndPath(CDM.MOD_ID, "empty");
     }
 }
 

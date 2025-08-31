@@ -53,6 +53,13 @@ public class ModItems {
                     .stacksTo(1)
             ));
 
+    public static final DeferredItem<Item> INFO = ITEMS.register(
+            "info",
+            () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+
+            ));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

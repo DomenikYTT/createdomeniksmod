@@ -17,6 +17,7 @@ public class CDMTextureShifts {
     public static final CTSpriteShiftEntry PINK_CASING = ct("pink_casing");
     public static final CTSpriteShiftEntry YELLOW_CASING = ct("yellow_casing");
     public static final CTSpriteShiftEntry LIME_CASING = ct("lime_casing");
+    public static final CTSpriteShiftEntry REALISM_CASING = ct("realism_casing");
 
 
 

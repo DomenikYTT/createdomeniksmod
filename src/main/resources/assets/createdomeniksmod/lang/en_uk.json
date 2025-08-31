@@ -10,6 +10,8 @@
 
 
   "block.createdomeniksmod.fire_coal_block": "Fire Coal Block",
+  "block.createdomeniksmod.pedestal": "Pedestal",
+  "block.createdomeniksmod.sacrifice_altar": "Sacrifice Altar",
   "block.createdomeniksmod.blasting_sail": "Blasting Sail",
   "block.createdomeniksmod.washing_sail": "Washing Sail",
   "block.createdomeniksmod.fire_casing": "Fire Casing",
@@ -24,6 +26,7 @@
   "block.createdomeniksmod.yellow_casing": "Yellow Casing",
   "block.createdomeniksmod.rgb_block": "RGB Block",
   "block.createdomeniksmod.cooltendo_swatch": "Cooltendo Swatch",
+  "block.createdomeniksmod.realism_casing": "Realistic Casing",
 
 
   "tooltip.createdomeniksmod.fire_coal": "§7This item is a blaze burner Fuel!",
@@ -37,8 +40,4 @@
   "tooltip.createdomeniksmod.credits.press_strg": "§8Press [§7Control§8] to view the Credits!",
   "tooltip.createdomeniksmod.lavundel.credits.strg_down0": "§7This Model and texture was made by:",
   "tooltip.createdomeniksmod.lavundel.credits.strg_down1": "§cLavundel",
-
-
-  "tab.blocks": "Create: Domenik's Mod (Blocks)",
-  "tab.items": "Create: Domenik's Mod (Items)"
 }

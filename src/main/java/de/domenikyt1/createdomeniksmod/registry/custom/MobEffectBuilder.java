@@ -1,6 +1,5 @@
 package de.domenikyt1.createdomeniksmod.registry.custom;
 
-
 import com.tterrag.registrate.builders.AbstractBuilder;
 import com.tterrag.registrate.builders.BuilderCallback;
 import net.minecraft.core.registries.Registries;

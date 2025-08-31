@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:stone_bricks"
+    },
+    "S": {
+      "item": "minecraft:stone_brick_slab"
+    },
+    "T": {
+      "item": "minecraft:stone_brick_stairs"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " B ",
+    "TBT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:pedestal"
+  }
+}

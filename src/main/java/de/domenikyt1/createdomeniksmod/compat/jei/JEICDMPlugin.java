@@ -1,0 +1,57 @@
+package de.domenikyt1.createdomeniksmod.compat.jei;
+
+
+import de.domenikyt1.createdomeniksmod.CDM;
+import de.domenikyt1.createdomeniksmod.block.ModBlocks;
+import de.domenikyt1.createdomeniksmod.recipe.ModRecipes;
+import de.domenikyt1.createdomeniksmod.recipe.PedestalRecipe;
+import mezz.jei.api.IModPlugin;
+import mezz.jei.api.JeiPlugin;
+import mezz.jei.api.registration.IGuiHandlerRegistration;
+import mezz.jei.api.registration.IRecipeCatalystRegistration;
+import mezz.jei.api.registration.IRecipeCategoryRegistration;
+import mezz.jei.api.registration.IRecipeRegistration;
+import net.minecraft.client.Minecraft;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeHolder;
+import net.minecraft.world.item.crafting.RecipeManager;
+import net.neoforged.fml.ModList;
+
+import java.util.List;
+
+@JeiPlugin
+public class JEICDMPlugin implements IModPlugin {
+
+    @Override
+    public ResourceLocation getPluginUid() {
+        return ResourceLocation.fromNamespaceAndPath(CDM.MOD_ID, "jei_plugin");
+    }
+
+    @Override
+    public void registerCategories(IRecipeCategoryRegistration registration) {
+        registration.addRecipeCategories(new SacrificeAltarRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+    }
+
+    @Override
+    public void registerRecipes(IRecipeRegistration registration) {
+        RecipeManager recipeManager = Minecraft.getInstance().level.getRecipeManager();
+
+        List<PedestalRecipe> sacrifice_altar = recipeManager
+                .getAllRecipesFor(ModRecipes.PEDESTAL_TYPE.get()).stream().map(RecipeHolder::value).toList();
+        registration.addRecipes(SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE, sacrifice_altar);
+
+    }
+
+    @Override
+    public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
+        registration.addRecipeCatalyst(new ItemStack(ModBlocks.SACRIFICE_ALTAR.get()), SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE);
+
+        if(ModList.get().isLoaded("rechiseled")) {
+            registration.addRecipeCatalyst(new ItemStack(ModBlocks.PEDESTAL.get()), SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE);
+        } else {
+
+        }
+
+    }
+}

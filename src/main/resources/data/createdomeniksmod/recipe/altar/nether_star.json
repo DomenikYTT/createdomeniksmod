@@ -1,0 +1,38 @@
+{
+  "type": "createdomeniksmod:pedestal_crafting",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_block"
+    },
+
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "minecraft:diamond_block"
+    },
+
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "minecraft:diamond_block"
+    },
+    {
+      "item": "minecraft:diamond_block"
+    }
+  ],
+  "entityType": "minecraft:wither_skeleton",
+  "result": {
+    "id": "minecraft:nether_star"
+  }
+}

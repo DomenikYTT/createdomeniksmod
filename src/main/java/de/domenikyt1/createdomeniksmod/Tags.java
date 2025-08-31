@@ -22,6 +22,8 @@ public class Tags {
         public static final TagKey<Item> BANDANAS = createTag("bandanas");
         public static final TagKey<Item> ALL_ITEMS = createTag("all_items");
 
+        public static final TagKey<Item> Blocks = createTag("blockitems");
+
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CDM.MOD_ID, name));
         }
