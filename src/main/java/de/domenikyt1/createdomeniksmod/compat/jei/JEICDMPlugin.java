@@ -2,6 +2,7 @@ package de.domenikyt1.createdomeniksmod.compat.jei;
 
 
 import de.domenikyt1.createdomeniksmod.CDM;
+import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.block.ModBlocks;
 import de.domenikyt1.createdomeniksmod.recipe.ModRecipes;
 import de.domenikyt1.createdomeniksmod.recipe.PedestalRecipe;
@@ -45,10 +46,10 @@ public class JEICDMPlugin implements IModPlugin {
 
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
-        registration.addRecipeCatalyst(new ItemStack(ModBlocks.SACRIFICE_ALTAR.get()), SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE);
+        registration.addRecipeCatalyst(new ItemStack(CDMBlocks.SACRIFICE_ALTAR.get()), SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE);
 
         if(ModList.get().isLoaded("rechiseled")) {
-            registration.addRecipeCatalyst(new ItemStack(ModBlocks.PEDESTAL.get()), SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE);
+            registration.addRecipeCatalyst(new ItemStack(CDMBlocks.PEDESTAL.get()), SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE);
         } else {
 
         }

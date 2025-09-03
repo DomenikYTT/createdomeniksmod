@@ -1,5 +1,6 @@
 package de.domenikyt1.createdomeniksmod.screen.custom;
 
+import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.block.ModBlocks;
 import de.domenikyt1.createdomeniksmod.screen.ModMenuTypes;
 import de.domenikyt1.createdomeniksmod.block.entity.custom.PedestalBlockEntity;
@@ -86,7 +87,7 @@ public class SidePedestalMenu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.PEDESTAL.get());
+                pPlayer, CDMBlocks.PEDESTAL.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

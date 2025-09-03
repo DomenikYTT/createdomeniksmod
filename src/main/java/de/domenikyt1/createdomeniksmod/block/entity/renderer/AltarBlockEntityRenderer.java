@@ -3,6 +3,7 @@ package de.domenikyt1.createdomeniksmod.block.entity.renderer;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
+import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.block.ModBlocks;
 import de.domenikyt1.createdomeniksmod.block.entity.custom.AltarBlockEntity;
 import net.minecraft.client.Minecraft;
@@ -98,7 +99,7 @@ public class AltarBlockEntityRenderer implements BlockEntityRenderer<AltarBlockE
     private static void renderSidePedestal(AltarBlockEntity pBlockEntity, PoseStack pPoseStack, MultiBufferSource pBufferSource, int pPackedLight, int pPackedOverlay,
                                            float xOffset, float zOffset) {
         BlockRenderDispatcher blockRenderer = Minecraft.getInstance().getBlockRenderer();
-        BlockState state = ModBlocks.PEDESTAL.get().defaultBlockState();
+        BlockState state = CDMBlocks.PEDESTAL.get().defaultBlockState();
         BakedModel model = blockRenderer.getBlockModel(state);
 
         pPoseStack.pushPose();

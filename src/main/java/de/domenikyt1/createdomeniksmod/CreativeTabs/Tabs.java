@@ -1,5 +1,6 @@
 package de.domenikyt1.createdomeniksmod.CreativeTabs;
 
+import com.simibubi.create.AllCreativeModeTabs;
 import de.domenikyt1.createdomeniksmod.block.ModBlocks;
 import de.domenikyt1.createdomeniksmod.CDM;
 import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
@@ -8,36 +9,26 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import static de.domenikyt1.createdomeniksmod.CDM.MOD_ID;
+import static de.domenikyt1.createdomeniksmod.CDM.REGISTRATE;
 
 public class Tabs {
     public static final DeferredRegister<CreativeModeTab> TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CDM.MOD_ID);
 
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BLOCKS_TAB = TAB.register("tab_cdm", () -> CreativeModeTab.builder().title(Component.translatable("itemGroup.createdomeniksmod")).withTabsBefore(CreativeModeTabs.COMBAT).icon(() -> ModBlocks.FIRE_COAL_BLOCK.get().asItem().getDefaultInstance()).displayItems((parameters, output) -> {
-        output.accept(ModItems.FIRE_COAL.get());
-        output.accept(ModItems.BASEBALL_BAT.get());
-        output.accept(ModItems.CHOCOLATE_COIN.get());
-        output.accept(ModItems.WIZZARD_HAT.get());
-        output.accept(ModItems.BANDANA.get());
-        output.accept(ModBlocks.COOLTENDO_SWATCH.get());
-        output.accept(ModBlocks.FIRE_COAL_BLOCK.get());
-        output.accept(ModBlocks.WASHING_SAIL.get());
-        output.accept(ModBlocks.BLASTING_SAIL.get());
-        output.accept(CDMBlocks.FIRE_CASING.get());
-        output.accept(CDMBlocks.RED_CASING.get());
-        output.accept(CDMBlocks.BLUE_CASING.get());
-        output.accept(CDMBlocks.RGB_CASING.get());
-        output.accept(CDMBlocks.BLACK_CASING.get());
-        output.accept(CDMBlocks.GRAY_CASING.get());
-        output.accept(CDMBlocks.PINK_CASING.get());
-        output.accept(CDMBlocks.LIME_CASING.get());
-        output.accept(CDMBlocks.YELLOW_CASING.get());
-        output.accept(ModBlocks.RGB_BLOCK.get());
-        output.accept(ModBlocks.REALISM_CASING.get());
-        output.accept(ModBlocks.COOLTENDO_SWATCH.get());
-        output.accept(ModBlocks.SACRIFICE_ALTAR.get());
-        output.accept(ModBlocks.PEDESTAL.get());
-    }).build());
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BASE_TAB = TAB.register("base_tab", () -> CreativeModeTab.builder()
+            .title(Component.translatableWithFallback("itemGroup.createdomeniksmod", MOD_ID))
+            .withTabsBefore(AllCreativeModeTabs.PALETTES_CREATIVE_TAB.getKey())
+            .icon(CDMBlocks.FIRE_COAL_BLOCK::asStack)
+            .build());
+
+    public static void register() {}
+
+    public static void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey().equals(Tabs.BASE_TAB.getKey())) for (var entry : REGISTRATE.getAll(Registries.ITEM));
+    }
 }

@@ -2,6 +2,7 @@ package de.domenikyt1.createdomeniksmod.compat.jei;
 
 
 import de.domenikyt1.createdomeniksmod.CDM;
+import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.block.ModBlocks;
 import de.domenikyt1.createdomeniksmod.item.ModItems;
 import de.domenikyt1.createdomeniksmod.recipe.PedestalRecipe;
@@ -38,7 +39,7 @@ public class SacrificeAltarRecipeCategory implements IRecipeCategory<PedestalRec
 
     public SacrificeAltarRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(TEXTURE, 0, 0, 144, 81);
-        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.SACRIFICE_ALTAR.get()));
+        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(CDMBlocks.SACRIFICE_ALTAR.get()));
     }
 
     @Override
@@ -75,7 +76,7 @@ public class SacrificeAltarRecipeCategory implements IRecipeCategory<PedestalRec
         builder.addSlot(RecipeIngredientRole.INPUT, 7, 59).addIngredients(recipe.getIngredients().get(7));
         builder.addSlot(RecipeIngredientRole.INPUT, 1, 33).addIngredients(recipe.getIngredients().get(8));
 
-        ItemStack stack = ModItems.INFO.toStack();
+        ItemStack stack = ModItems.INFO.asStack();
         String entityType = recipe.entityType().toString().substring(17).replace("_", " ");
         String[] words = entityType.split(" ");
         StringBuilder result = new StringBuilder();

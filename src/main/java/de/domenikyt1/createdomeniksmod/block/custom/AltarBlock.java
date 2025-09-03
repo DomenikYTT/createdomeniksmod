@@ -1,6 +1,7 @@
 package de.domenikyt1.createdomeniksmod.block.custom;
 
 import com.mojang.serialization.MapCodec;
+import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.block.ModBlocks;
 import de.domenikyt1.createdomeniksmod.block.entity.ModBlockEntities;
 import de.domenikyt1.createdomeniksmod.block.entity.custom.AltarBlockEntity;
@@ -88,7 +89,7 @@ public class AltarBlock extends BaseEntityBlock {
     protected ItemInteractionResult useItemOn(ItemStack pStack, BlockState pState, Level pLevel, BlockPos pPos,
                                               Player pPlayer, InteractionHand pHand, BlockHitResult pHitResult) {
         if(pLevel.getBlockEntity(pPos) instanceof AltarBlockEntity altarBlockEntity) {
-            if(pStack.is(ModBlocks.PEDESTAL.asItem())) {
+            if(pStack.is(CDMBlocks.PEDESTAL.asItem())) {
                 for(Vector2i offset : AltarBlockEntity.offsets) {
                     if(isPositionEmpty(pLevel, pPos.offset(offset.x, 0, offset.y))) {
                         placePedestal(pLevel, pPos.offset(offset.x, 0, offset.y));
@@ -138,11 +139,11 @@ public class AltarBlock extends BaseEntityBlock {
     }
 
     private boolean hasSidePedestal(Level level, BlockPos pos) {
-        return level.getBlockState(pos).is(ModBlocks.PEDESTAL);
+        return level.getBlockState(pos).is(CDMBlocks.PEDESTAL);
     }
 
     private void placePedestal(Level level, BlockPos pos) {
-        level.setBlockAndUpdate(pos, ModBlocks.PEDESTAL.get().defaultBlockState());
+        level.setBlockAndUpdate(pos, CDMBlocks.PEDESTAL.get().defaultBlockState());
     }
 
     @Nullable

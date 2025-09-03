@@ -1,5 +1,6 @@
 package de.domenikyt1.createdomeniksmod.block.entity.custom;
 
+import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.block.ModBlocks;
 import de.domenikyt1.createdomeniksmod.block.entity.ModBlockEntities;
 import de.domenikyt1.createdomeniksmod.networking.PedestalCraftCountS2C;
@@ -221,7 +222,7 @@ public class AltarBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean isSidePedestal(Vector2i offset) {
-        return level.getBlockState(this.getBlockPos().offset(offset.x, 0, offset.y)).is(ModBlocks.PEDESTAL);
+        return level.getBlockState(this.getBlockPos().offset(offset.x, 0, offset.y)).is(CDMBlocks.PEDESTAL);
     }
 
     private boolean hasItemInInventory(Vector2i offset, Item item) {

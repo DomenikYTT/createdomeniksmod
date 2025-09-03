@@ -1,5 +1,6 @@
 package de.domenikyt1.createdomeniksmod.block.entity;
 
+import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.block.ModBlocks;
 import de.domenikyt1.createdomeniksmod.block.entity.custom.AltarBlockEntity;
 import de.domenikyt1.createdomeniksmod.block.entity.custom.PedestalBlockEntity;
@@ -17,11 +18,11 @@ public class ModBlockEntities {
 
     public static final Supplier<BlockEntityType<AltarBlockEntity>> SACRIFICE_ALTAR_BE =
             BLOCK_ENTITIES.register("sacrifice_altar_be", () -> BlockEntityType.Builder.of(
-                    AltarBlockEntity::new, ModBlocks.SACRIFICE_ALTAR.get()).build(null));
+                    AltarBlockEntity::new, CDMBlocks.SACRIFICE_ALTAR.get()).build(null));
 
     public static final Supplier<BlockEntityType<PedestalBlockEntity>> PEDESTAL_BE =
             BLOCK_ENTITIES.register("pedestal_be", () -> BlockEntityType.Builder.of(
-                    PedestalBlockEntity::new, ModBlocks.PEDESTAL.get()).build(null));
+                    PedestalBlockEntity::new, CDMBlocks.PEDESTAL.get()).build(null));
 
 
 

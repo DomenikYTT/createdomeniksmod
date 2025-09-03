@@ -5,8 +5,10 @@ import de.domenikyt1.createdomeniksmod.block.custom.PedestalBlock;
 import de.domenikyt1.createdomeniksmod.block.custom.SailBlock;
 import de.domenikyt1.createdomeniksmod.block.custom.cooltendo;
 import de.domenikyt1.createdomeniksmod.item.ModItems;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -16,64 +18,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class ModBlocks {/*
     public static final String MOD_ID = "createdomeniksmod";
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MOD_ID);
-
-
-    public static final DeferredBlock<Block> FIRE_COAL_BLOCK = registerBlock("fire_coal_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2, 1)
-                    .sound(SoundType.STONE)
-            ));
-    public static final DeferredBlock<Block> BLASTING_SAIL = registerBlock(
-            "blasting_sail",
-            () -> new SailBlock(BlockBehaviour.Properties.of()
-                    .strength(2,1)
-                    .sound(SoundType.WOOD)
-                    .noOcclusion()
-            ));
-
-    public static final DeferredBlock<Block> WASHING_SAIL = registerBlock(
-            "washing_sail",
-            () -> new SailBlock(BlockBehaviour.Properties.of()
-                    .strength(2, 1)
-                    .sound(SoundType.WOOD)
-                    .noOcclusion()
-            ));
-    public static final DeferredBlock<Block> RGB_BLOCK = registerBlock(
-            "rgb_block",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.STONE)
-            ));
-    public static final DeferredBlock<Block> REALISM_CASING = registerBlock(
-            "realism_casing",
-            ()-> new Block(BlockBehaviour.Properties.of()
-                    .sound(SoundType.WOOD)
-            ));
-
-    public static final DeferredBlock<cooltendo> COOLTENDO_SWATCH = registerBlock(
-            "cooltendo_swatch",
-            () -> new cooltendo(BlockBehaviour.Properties.of()
-                    .noOcclusion()
-                    .sound(SoundType.METAL)
-            ));
-
-    public static final DeferredBlock<AltarBlock> SACRIFICE_ALTAR = registerBlock(
-            "sacrifice_altar",
-            () -> new AltarBlock(BlockBehaviour.Properties.of()
-                    .noOcclusion()
-                    .sound(SoundType.STONE)
-                    .strength(1f)
-            ));
-
-    public static final DeferredBlock<PedestalBlock> PEDESTAL = registerBlock(
-            "pedestal",
-            () -> new PedestalBlock(BlockBehaviour.Properties.of()
-                    .noOcclusion()
-                    .sound(SoundType.STONE)
-                    .strength(1f)
-            ));
 
 
 
@@ -85,10 +32,10 @@ public class ModBlocks {
 
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ModItems.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
-
+*/
     public static void register(IEventBus eventBus) {
-        BLOCKS.register(eventBus);
+        //BLOCKS.register(eventBus);
     }
 }
