@@ -1,0 +1,39 @@
+{
+  "type": "createdomeniksmod:pedestal_crafting",
+  "ingredients": [
+    {
+      "item": "minecraft:black_dye"
+    },
+  
+
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "entityType": "minecraft:pig",
+  "result": {
+    "id": "createdomeniksmod:asphalt"
+  }
+}

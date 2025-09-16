@@ -1,36 +1,45 @@
 package de.domenikyt1.createdomeniksmod;
 
 import com.mojang.logging.LogUtils;
-import de.domenikyt1.createdomeniksmod.block.ModBlocks;
-import de.domenikyt1.createdomeniksmod.block.entity.ModBlockEntities;
-import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
-import de.domenikyt1.createdomeniksmod.CreativeTabs.Tabs;
-import de.domenikyt1.createdomeniksmod.item.ModItems;
-import de.domenikyt1.createdomeniksmod.recipe.ModRecipes;
+import de.domenikyt1.createdomeniksmod.datagen.CDMDatagen;
+import de.domenikyt1.createdomeniksmod.register.block.entity.ModBlockEntities;
+import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
+import de.domenikyt1.createdomeniksmod.register.CreativeTabs.Tabs;
+import de.domenikyt1.createdomeniksmod.register.item.ModItems;
+import de.domenikyt1.createdomeniksmod.register.recipe.ModRecipes;
+import de.domenikyt1.createdomeniksmod.register.util.CDMItemProperties;
 import de.domenikyt1.createdomeniksmod.registry.custom.CDMRegistrate;
-import de.domenikyt1.createdomeniksmod.screen.ModMenuTypes;
+import de.domenikyt1.createdomeniksmod.register.screen.ModMenuTypes;
+import de.domenikyt1.createdomeniksmod.utils.CDMRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.ModList;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
+import static de.domenikyt1.createdomeniksmod.register.CreativeTabs.Tabs.BASE_TAB;
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CDM.MOD_ID)
 public class CDM {
 
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "createdomeniksmod";
+
+    public static CDMRegistry REGISTER = new CDMRegistry(MOD_ID);
 
     public static CDMRegistrate REGISTRATE = CDMRegistrate.create(MOD_ID);
 
@@ -49,17 +58,18 @@ public class CDM {
         modEventBus.addListener(this::commonSetup);
         Tabs.TAB.register(modEventBus);
         REGISTRATE.registerEventListeners(modEventBus);
-        REGISTRATE.defaultCreativeTab(Tabs.BASE_TAB, "base_tab");
+        REGISTRATE.defaultCreativeTab(BASE_TAB, "base_tab");
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         // Register the Deferred Register to the mod event bus so items get registered
         LOGGER.info("Loading All Creative Tabs...");
 
-        LOGGER.info("Loading Blocks");
-        CDMBlocks.register();
-        ModBlocks.register(modEventBus);
+
         LOGGER.info("Loading Items...");
         ModItems.register();
+        LOGGER.info("Loading Blocks");
+        CDMBlocks.register();
+
         if(ModList.get().isLoaded("rechiseled")) {
             LOGGER.info("Loading Rechiseled Compat...");
         } else {
@@ -73,7 +83,8 @@ public class CDM {
         ModRecipes.register(modEventBus);
 
 
-
+        modEventBus.addListener(Tabs::addCreative);
+        modEventBus.addListener(EventPriority.HIGH, CDMDatagen::gatherData);
         // Register the Deferred Register to the mod event bus so tabs get registered
 
         // Register ourselves for server and other game events we are interested in.
@@ -103,6 +114,13 @@ public class CDM {
     public void onServerStarting(ServerStartingEvent event) {
         // Do something when the server starts
         LOGGER.info("you are cool :D");
+    }
+    @EventBusSubscriber(modid = CDM.MOD_ID, value = Dist.CLIENT)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            CDMItemProperties.addCustomItemProperties();
+        }
     }
 
 

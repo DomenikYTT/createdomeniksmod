@@ -7,6 +7,21 @@
   "item.createdomeniksmod.baseball_bat": "Baseball Bat",
   "item.createdomeniksmod.chocolate_coin": "Chocolate Coin",
   "item.createdomeniksmod.wizzard_hat": "Wizzard Hat",
+  "item.createdomeniksmod.elementium_pickaxe": "Elementium Pickaxe",
+  "item.createdomeniksmod.elementium_ingot": "Elementium Ingot",
+  "item.createdomeniksmod.raw_elementium": "Raw Elementium",
+  "item.createdomeniksmod.elementium_axe": "Elementium Axe",
+  "item.createdomeniksmod.elementium_sword": "Elementium Sword",
+  "item.createdomeniksmod.elementium_hoe": "Elementium Hoe",
+  "item.createdomeniksmod.elementium_shovel": "Elementium Shovel",
+  "item.createdomeniksmod.elementium_helmet": "Elementium Helmet",
+  "item.createdomeniksmod.elementium_chestplate": "Elementium Chestplate",
+  "item.createdomeniksmod.elementium_leggings": "Elementium Leggings",
+  "item.createdomeniksmod.elementium_boots": "Elementium Boots",
+  "item.createdomeniksmod.elementium_bow": "Elementium Bow",
+  "item.createdomeniksmod.elementium_rod": "Elementium Rod",
+  "item.createdomeniksmod.elementium_hammer": "Elementium Hammer",
+  "item.createdomeniksmod.elementium_excavator": "Elementium Excavator",
 
 
   "block.createdomeniksmod.fire_coal_block": "Fire Coal Block",
@@ -27,6 +42,13 @@
   "block.createdomeniksmod.rgb_block": "RGB Block",
   "block.createdomeniksmod.cooltendo_swatch": "Cooltendo Swatch",
   "block.createdomeniksmod.realism_casing": "Realistic Casing",
+  "block.createdomeniksmod.asphalt": "Asphalt",
+  "block.createdomeniksmod.raw_elementium_block": "Block of Raw Elementium",
+  "block.createdomeniksmod.deepslate_elementium_ore": "Deepslate Elementium Ore",
+  "block.createdomeniksmod.elementium_ore": "Elementium Ore",
+  "block.createdomeniksmod.elementium_block": "Block of Elementium",
+  "block.createdomeniksmod.andesite_alloy_ore": "Andesite Alloy Ore",
+  "block.createdomeniksmod.deepslate_andesite_alloy_ore": "Deepslate Andesite Alloy Ore",
 
 
   "tooltip.createdomeniksmod.fire_coal": "§7This item is a blaze burner Fuel!",
@@ -35,9 +57,11 @@
   "tooltip.createdomeniksmod.baseball_bat.0": "§7This Baseball Bat is owned by",
   "tooltip.createdomeniksmod.baseball_bat.1": "§cTung Tung Tung Sahur§7!",
   "tooltip.createdomeniksmod.Casings.shift_down": "This doesn't work to encase somethings.",
+  "tooltip.createdomeniksmod.speed_multiplier0": "§7this block grants the player",
+  "tooltip.createdomeniksmod.speed_multiplier1": "§7that stays on the block the speed effect. level:",
 
 
   "tooltip.createdomeniksmod.credits.press_strg": "§8Press [§7Control§8] to view the Credits!",
   "tooltip.createdomeniksmod.lavundel.credits.strg_down0": "§7This Model and texture was made by:",
-  "tooltip.createdomeniksmod.lavundel.credits.strg_down1": "§cLavundel",
+  "tooltip.createdomeniksmod.lavundel.credits.strg_down1": "§cLavundel"
 }

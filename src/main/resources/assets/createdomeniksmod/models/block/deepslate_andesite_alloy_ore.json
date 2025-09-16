@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "createdomeniksmod:block/deepslate_andesite_alloy_ore"
+  }
+}

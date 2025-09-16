@@ -1,12 +1,12 @@
 package de.domenikyt1.createdomeniksmod;
 
 
-import de.domenikyt1.createdomeniksmod.block.entity.ModBlockEntities;
-import de.domenikyt1.createdomeniksmod.screen.ModMenuTypes;
-import de.domenikyt1.createdomeniksmod.block.entity.renderer.AltarBlockEntityRenderer;
-import de.domenikyt1.createdomeniksmod.block.entity.renderer.PedestalBlockEntityRenderer;
-import de.domenikyt1.createdomeniksmod.screen.custom.PedestalScreen;
-import de.domenikyt1.createdomeniksmod.screen.custom.SidePedestalScreen;
+import de.domenikyt1.createdomeniksmod.register.block.entity.ModBlockEntities;
+import de.domenikyt1.createdomeniksmod.register.screen.ModMenuTypes;
+import de.domenikyt1.createdomeniksmod.register.block.entity.renderer.AltarBlockEntityRenderer;
+import de.domenikyt1.createdomeniksmod.register.block.entity.renderer.PedestalBlockEntityRenderer;
+import de.domenikyt1.createdomeniksmod.register.screen.custom.PedestalScreen;
+import de.domenikyt1.createdomeniksmod.register.screen.custom.SidePedestalScreen;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

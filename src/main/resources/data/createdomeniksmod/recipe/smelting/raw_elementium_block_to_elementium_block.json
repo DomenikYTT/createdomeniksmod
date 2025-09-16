@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "createdomeniksmod:raw_elementium_block"
+    }
+  ],
+  "result": {
+    "id": "createdomeniksmod:elementium_block"
+  },
+  "experience": 3,
+  "cookingtime": 2000
+}

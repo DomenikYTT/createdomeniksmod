@@ -2,13 +2,11 @@ package de.domenikyt1.createdomeniksmod.compat.jei;
 
 
 import de.domenikyt1.createdomeniksmod.CDM;
-import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
-import de.domenikyt1.createdomeniksmod.block.ModBlocks;
-import de.domenikyt1.createdomeniksmod.recipe.ModRecipes;
-import de.domenikyt1.createdomeniksmod.recipe.PedestalRecipe;
+import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
+import de.domenikyt1.createdomeniksmod.register.recipe.ModRecipes;
+import de.domenikyt1.createdomeniksmod.register.recipe.PedestalRecipe;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
-import mezz.jei.api.registration.IGuiHandlerRegistration;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
@@ -17,7 +15,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.RecipeManager;
-import net.neoforged.fml.ModList;
 
 import java.util.List;
 
@@ -47,12 +44,8 @@ public class JEICDMPlugin implements IModPlugin {
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(new ItemStack(CDMBlocks.SACRIFICE_ALTAR.get()), SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE);
+        registration.addRecipeCatalyst(new ItemStack(CDMBlocks.PEDESTAL.get()), SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE);
 
-        if(ModList.get().isLoaded("rechiseled")) {
-            registration.addRecipeCatalyst(new ItemStack(CDMBlocks.PEDESTAL.get()), SacrificeAltarRecipeCategory.PEDESTAL_RECIPE_RECIPE_TYPE);
-        } else {
-
-        }
 
     }
 }

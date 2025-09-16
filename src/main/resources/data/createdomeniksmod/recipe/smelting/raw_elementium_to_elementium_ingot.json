@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "createdomeniksmod:raw_elementium"
+    },
+    {
+      "item": "createdomeniksmod:deepslate_elementium_ore"
+    },
+    {
+      "item": "createdomeniksmod:elementium_ore"
+    }
+  ],
+  "result": {
+    "id": "createdomeniksmod:elementium_ingot"
+  },
+  "experience": 3,
+  "cookingtime": 400
+}

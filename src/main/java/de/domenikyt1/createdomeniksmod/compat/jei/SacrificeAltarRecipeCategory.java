@@ -2,13 +2,13 @@ package de.domenikyt1.createdomeniksmod.compat.jei;
 
 
 import de.domenikyt1.createdomeniksmod.CDM;
-import de.domenikyt1.createdomeniksmod.block.CDMBlocks;
-import de.domenikyt1.createdomeniksmod.block.ModBlocks;
-import de.domenikyt1.createdomeniksmod.item.ModItems;
-import de.domenikyt1.createdomeniksmod.recipe.PedestalRecipe;
+import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
+import de.domenikyt1.createdomeniksmod.register.item.ModItems;
+import de.domenikyt1.createdomeniksmod.register.recipe.PedestalRecipe;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
+import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
@@ -17,11 +17,8 @@ import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextColor;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
 import org.jetbrains.annotations.Nullable;
 
 public class SacrificeAltarRecipeCategory implements IRecipeCategory<PedestalRecipe> {
@@ -53,6 +50,7 @@ public class SacrificeAltarRecipeCategory implements IRecipeCategory<PedestalRec
     }
 
     @Override
+    @Nullable
     public IDrawable getBackground() {
         return background;
     }
