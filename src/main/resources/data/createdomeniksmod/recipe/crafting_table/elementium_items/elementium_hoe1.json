@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key": {
+    "I": {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    "R": {
+      "item": "createdomeniksmod:elementium_rod"
+    }
+  },
+  "pattern": [
+    "II",
+    " R",
+    " R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:elementium_hoe"
+  }
+}

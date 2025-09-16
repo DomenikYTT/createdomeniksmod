@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key": {
+    "S": {
+      "item": "minecraft:string"
+    },
+    "R": {
+      "item": "createdomeniksmod:elementium_rod"
+    }
+  },
+  "pattern": [
+    " RS",
+    "R S",
+    " RS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:elementium_bow"
+  }
+}

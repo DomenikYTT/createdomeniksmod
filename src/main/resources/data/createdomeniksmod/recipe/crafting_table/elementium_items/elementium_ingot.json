@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "createdomeniksmod:elementium_block"
+    }
+  },
+  "pattern": [
+    "I"
+  ],
+  "result": {
+    "count": 9,
+    "id": "createdomeniksmod:elementium_ingot"
+  }
+}

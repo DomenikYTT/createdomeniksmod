@@ -7,6 +7,24 @@
   "item.createdomeniksmod.baseball_bat": "Baseballschläger",
   "item.createdomeniksmod.chocolate_coin": "Schokoladen Münze",
   "item.createdomeniksmod.wizzard_hat": "Zauber Hut",
+  "item.createdomeniksmod.elementium_pickaxe": "Elementium Spitzhacke",
+  "item.createdomeniksmod.elementium_ingot": "Elementium Barren",
+  "item.createdomeniksmod.raw_elementium": "Roh Elementium",
+  "item.createdomeniksmod.elementium_axe": "Elementium Axt",
+  "item.createdomeniksmod.elementium_sword": "Elementium Schwert",
+  "item.createdomeniksmod.elementium_hoe": "Elementium Hacke",
+  "item.createdomeniksmod.elementium_shovel": "Elementium Schaufel",
+  "item.createdomeniksmod.elementium_helmet": "Elementium Helm",
+  "item.createdomeniksmod.elementium_chestplate": "Elementium Brustplatte",
+  "item.createdomeniksmod.elementium_leggings": "Elementium Hose",
+  "item.createdomeniksmod.elementium_boots": "Elementium Schuhe",
+  "item.createdomeniksmod.elementium_hammer": "Elementium Hammer",
+  "item.createdomeniksmod.elementium_excavator": "Elementium Schippe",
+  "item.createdomeniksmod.elementium_bow": "Elementium Bogen",
+  "item.createdomeniksmod.elementium_rod": "Elementium Stab",
+
+
+
 
 
   "block.createdomeniksmod.fire_coal_block": "Feuer Kohle Block",
@@ -27,6 +45,13 @@
   "block.createdomeniksmod.rgb_block": "RGB Block",
   "block.createdomeniksmod.cooltendo_swatch": "Cooltendo Swatch",
   "block.createdomeniksmod.realism_casing": "Realistisches Gehäuse",
+  "block.createdomeniksmod.asphalt": "Asphalt",
+  "block.createdomeniksmod.raw_elementium_block": "Block aus Roh Elementium",
+  "block.createdomeniksmod.deepslate_elementium_ore": "Tiefenschiefer Elementium Erz",
+  "block.createdomeniksmod.elementium_ore": "Elementium Erz",
+  "block.createdomeniksmod.elementium_block": "Block aus Elementium",
+  "block.createdomeniksmod.andesite_alloy_ore": "Andesite Legierungs Erz",
+  "block.createdomeniksmod.deepslate_andesite_alloy_ore": "Tiefenschiefer Andesite Legierungs Erz",
 
 
 
@@ -36,6 +61,8 @@
   "tooltip.createdomeniksmod.baseball_bat.0": "§7Dieser Baseballschläger gehört:",
   "tooltip.createdomeniksmod.baseball_bat.1": "§cTung Tung Tung Sahur§7!",
   "tooltip.createdomeniksmod.Casings.shift_down": "du kannst hiermit nichts verdecken!",
+  "tooltip.createdomeniksmod.speed_multiplier0": "§7Dieser Block gibt dem Spieler",
+  "tooltip.createdomeniksmod.speed_multiplier1": "§7darauf den Geschwindigkeits effect. Stufe:",
 
 
   "tooltip.createdomeniksmod.credits.press_strg": "§8Drücke [§7Strg§8] um die Kredits zu sehen!",

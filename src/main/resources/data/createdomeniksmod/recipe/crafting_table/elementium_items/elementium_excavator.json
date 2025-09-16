@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "key": {
+    "I": {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    "R": {
+      "item": "createdomeniksmod:elementium_rod"
+    },
+    "B": {
+      "item": "createdomeniksmod:elementium_block"
+    }
+  },
+  "pattern": [
+    "IBI",
+    "IRI",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:elementium_excavator"
+  }
+}

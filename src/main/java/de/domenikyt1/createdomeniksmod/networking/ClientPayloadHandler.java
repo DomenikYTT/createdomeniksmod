@@ -1,6 +1,6 @@
 package de.domenikyt1.createdomeniksmod.networking;
 
-import de.domenikyt1.createdomeniksmod.block.entity.custom.AltarBlockEntity;
+import de.domenikyt1.createdomeniksmod.register.block.entity.custom.AltarBlockEntity;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
 public class ClientPayloadHandler {

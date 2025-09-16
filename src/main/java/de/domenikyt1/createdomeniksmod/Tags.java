@@ -13,17 +13,14 @@ public class Tags {
 
         public static final TagKey<Block> ALL_BLOCKS = createTag("all_blocks");
 
+        public static final TagKey<Block> NEEDS_ELEMENTIUM_TOOL = createTag("needs_elementium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ELEMENTIUM_TOOL = createTag("incorrect_for_elementium_tool");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(CDM.MOD_ID, name));
         }
     }
     public static class Items {
-        public static final TagKey<Item> HATS = createTag("hats");
-        public static final TagKey<Item> BANDANAS = createTag("bandanas");
-        public static final TagKey<Item> ALL_ITEMS = createTag("all_items");
-
-        public static final TagKey<Item> Blocks = createTag("blockitems");
-
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CDM.MOD_ID, name));
         }
