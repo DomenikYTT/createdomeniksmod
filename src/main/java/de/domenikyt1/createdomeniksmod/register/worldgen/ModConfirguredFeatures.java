@@ -28,14 +28,14 @@ public class ModConfirguredFeatures {
         RuleTest deepslatereplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         List<OreConfiguration.TargetBlockState> overworldElementiumOres = List.of(
-          OreConfiguration.target(stonereplaceables, CDMBlocks.ELEMENTIUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(stonereplaceables, CDMBlocks.ELEMENTIUM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslatereplaceables, CDMBlocks.DEEPSLATE_ELEMENTIUM_ORE.get().defaultBlockState())
         );
         register(context, OVERWORLD_ELEMENTIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldElementiumOres, 4));
 
         List<OreConfiguration.TargetBlockState> overworldAndesitealloyOres = List.of(
-          OreConfiguration.target(stonereplaceables, CDMBlocks.ANDESITE_ALLOY_ORE.get().defaultBlockState()),
-          OreConfiguration.target(deepslatereplaceables, CDMBlocks.DEEPSLATE_ANDESITE_ALLOY_ORE.get().defaultBlockState())
+                OreConfiguration.target(stonereplaceables, CDMBlocks.ANDESITE_ALLOY_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslatereplaceables, CDMBlocks.DEEPSLATE_ANDESITE_ALLOY_ORE.get().defaultBlockState())
         );
         register(context, OVERWORLD_ANDESITE_ALLOY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAndesitealloyOres, 9));
     }

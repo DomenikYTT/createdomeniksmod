@@ -1,7 +1,11 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
 package de.domenikyt1.createdomeniksmod.register.item.custom;
 
 import java.util.List;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
@@ -15,7 +19,11 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.component.Tool.Rule;
@@ -58,46 +66,36 @@ public class BaseballBat extends TieredItem {
         p_345553_.hurtAndBreak(1, p_346282_, EquipmentSlot.MAINHAND);
     }
 
-
-
     public boolean canPerformAction(ItemStack stack, ItemAbility itemAbility) {
         return ItemAbilities.DEFAULT_SWORD_ACTIONS.contains(itemAbility);
     }
 
-
-
-
-    @Override
-    public void appendHoverText(ItemStack Stack, TooltipContext Context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-
-        if(Screen.hasShiftDown()) {
+    public void appendHoverText(ItemStack Stack, Item.TooltipContext Context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        if (Screen.hasShiftDown()) {
             tooltipComponents.add(Component.empty());
             tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.baseball_bat.0"));
             tooltipComponents.add(Component.literal("§c" + Minecraft.getInstance().getUser().getName()));
-            if(Screen.hasControlDown()) {
+            if (Screen.hasControlDown()) {
                 tooltipComponents.add(Component.empty());
                 tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.lavundel.credits.strg_down0"));
                 tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.lavundel.credits.strg_down1"));
             } else {
                 tooltipComponents.add(Component.empty());
                 tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.credits.press_strg"));
-
-
             }
         } else {
             tooltipComponents.add(Component.empty());
             tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.info.shift"));
-            if(Screen.hasControlDown()) {
+            if (Screen.hasControlDown()) {
                 tooltipComponents.add(Component.empty());
                 tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.lavundel.credits.strg_down0"));
                 tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.lavundel.credits.strg_down1"));
             } else {
                 tooltipComponents.add(Component.empty());
                 tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.credits.press_strg"));
-
-
             }
         }
+
         super.appendHoverText(Stack, Context, tooltipComponents, tooltipFlag);
     }
 }

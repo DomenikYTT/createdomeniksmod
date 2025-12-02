@@ -188,10 +188,10 @@ public class AltarBlockEntity extends BlockEntity implements MenuProvider {
                         offsets.stream().map(offset -> {
                             if(hasSidePedestals()) {
                                 return ((PedestalBlockEntity) level.getBlockEntity(this.getBlockPos().offset(offset.x, 0, offset.y))).
-                                    inventory.getStackInSlot(0);
-                        } else {
-                            return ItemStack.EMPTY;
-                        }}).toList(), entityLastSacrificed), level);
+                                        inventory.getStackInSlot(0);
+                            } else {
+                                return ItemStack.EMPTY;
+                            }}).toList(), entityLastSacrificed), level);
     }
 
     private void exchangeItemInMainPedestal() {

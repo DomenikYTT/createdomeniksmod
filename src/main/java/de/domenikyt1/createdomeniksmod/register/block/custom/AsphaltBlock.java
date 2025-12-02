@@ -45,10 +45,10 @@ public class AsphaltBlock extends Block {
             tooltipComponents.add(Component.empty());
             tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.info.shift"));
         } else {
-         tooltipComponents.add(Component.empty());
-         tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.speed_multiplier0"));
-         tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.speed_multiplier1"));
-         tooltipComponents.add(Component.literal("§a" + amplifier));
+            tooltipComponents.add(Component.empty());
+            tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.speed_multiplier0"));
+            tooltipComponents.add(Component.translatable("tooltip.createdomeniksmod.speed_multiplier1"));
+            tooltipComponents.add(Component.literal("§a" + amplifier));
         }
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }

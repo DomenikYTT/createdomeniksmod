@@ -1,6 +1,9 @@
 package de.domenikyt1.createdomeniksmod.register.item.armor;
 
 import com.google.common.collect.Multimap;
+import java.util.EnumMap;
+import java.util.Map;
+import java.util.function.Function;
 import net.minecraft.Util;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
@@ -8,20 +11,17 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.AirItem;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ElytraItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ArmorItem.Type;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.EnumMap;
-import java.util.Map;
-import java.util.function.Function;
-
-/**
- * basic armor item.
- */
 public abstract class AbstractArmorItem extends ArmorItem {
-
-    public AbstractArmorItem(Holder<ArmorMaterial> pMaterial, Type pType, Properties pProperties) {
+    public AbstractArmorItem(Holder<ArmorMaterial> pMaterial, ArmorItem.Type pType, Item.Properties pProperties) {
         super(pMaterial, pType, pProperties);
     }
 
@@ -32,45 +32,68 @@ public abstract class AbstractArmorItem extends ArmorItem {
     public static boolean isFullSetActive(LivingEntity living, Holder<ArmorMaterial> materials) {
         if (living == null) {
             return false;
-        }
-        ArmorItem head = living.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof ArmorItem armorItem ? armorItem : null;
-        Item chestPlate = living.getItemBySlot(EquipmentSlot.CHEST).getItem();
-        ArmorItem chest;
-        if (chestPlate instanceof ElytraItem || chestPlate instanceof AirItem) {
-            return false;
         } else {
-            chest = (ArmorItem) living.getItemBySlot(EquipmentSlot.CHEST).getItem();
+            Item var4 = living.getItemBySlot(EquipmentSlot.HEAD).getItem();
+            ArmorItem var10000;
+            if (var4 instanceof ArmorItem) {
+                ArmorItem armorItem = (ArmorItem)var4;
+                var10000 = armorItem;
+            } else {
+                var10000 = null;
+            }
+
+            ArmorItem head = var10000;
+            Item chestPlate = living.getItemBySlot(EquipmentSlot.CHEST).getItem();
+            if (!(chestPlate instanceof ElytraItem) && !(chestPlate instanceof AirItem)) {
+                ArmorItem chest = (ArmorItem)living.getItemBySlot(EquipmentSlot.CHEST).getItem();
+                Item var7 = living.getItemBySlot(EquipmentSlot.LEGS).getItem();
+                ArmorItem feet;
+                if (var7 instanceof ArmorItem) {
+                    feet = (ArmorItem)var7;
+                    var10000 = feet;
+                } else {
+                    var10000 = null;
+                }
+
+                ArmorItem legs = var10000;
+                Item var8 = living.getItemBySlot(EquipmentSlot.FEET).getItem();
+                if (var8 instanceof ArmorItem) {
+                    ArmorItem armorItem = (ArmorItem)var8;
+                    var10000 = armorItem;
+                } else {
+                    var10000 = null;
+                }
+
+                feet = var10000;
+                return head != null && legs != null && feet != null && head.getMaterial() == materials && chest.getMaterial() == materials && legs.getMaterial() == materials && feet.getMaterial() == materials;
+            } else {
+                return false;
+            }
         }
-        ArmorItem legs = living.getItemBySlot(EquipmentSlot.LEGS).getItem() instanceof ArmorItem armorItem ? armorItem : null;
-        ArmorItem feet = living.getItemBySlot(EquipmentSlot.FEET).getItem() instanceof ArmorItem armorItem ? armorItem : null;
-        return (head != null && legs != null && feet != null) && (head.getMaterial() == materials && chest.getMaterial() == materials && legs.getMaterial() == materials && feet.getMaterial() == materials);
     }
 
-    public Multimap<Attribute, AttributeModifier> getAttributeMods(EquipmentSlot slot) {return null;}
+    public Multimap<Attribute, AttributeModifier> getAttributeMods(EquipmentSlot slot) {
+        return null;
+    }
 
-    //region display / model
-
-    /**
-     * creates a custom texture for your armor in
-     * <br>{@code <nameSpace>:textures/models/armor/custom/<id>.png}
-     */
     public static ResourceLocation makeCustomTextureLocation(String nameSpace, String id) {
         return ResourceLocation.fromNamespaceAndPath(nameSpace, "textures/models/armor/custom/" + id + ".png");
     }
 
-    //endregion
+    public static <T extends AbstractArmorItem> Map<ArmorItem.Type, DeferredItem<T>> createRegistry(DeferredRegister.Items registry, String baseName, Function<ArmorItem.Type, T> creator) {
+        return (Map)Util.make(new EnumMap(ArmorItem.Type.class), (map) -> {
+            ArmorItem.Type[] var4 = Type.values();
+            int var5 = var4.length;
 
-    /**
-     * @param registry the Register to add to
-     * @param baseName the base name of the armor
-     * @param creator a lambda function to create an instance of the armor, mostly a method reference to the constructor
-     * @return a Map mapping the ArmorType to the RegObj for the slot
-     */
-    public static <T extends AbstractArmorItem> Map<Type, DeferredItem<T>> createRegistry(DeferredRegister.Items registry, String baseName, Function<Type, T> creator) {
-        return Util.make(new EnumMap<>(Type.class), map -> {
-            for (Type type : Type.values()) {
-                if (type != Type.BODY) map.put(type, registry.register(baseName + "_" + type.getName(), () -> creator.apply(type)));
+            for(int var6 = 0; var6 < var5; ++var6) {
+                ArmorItem.Type type = var4[var6];
+                if (type != Type.BODY) {
+                    map.put(type, registry.register(baseName + "_" + type.getName(), () -> {
+                        return (AbstractArmorItem)creator.apply(type);
+                    }));
+                }
             }
+
         });
     }
 }

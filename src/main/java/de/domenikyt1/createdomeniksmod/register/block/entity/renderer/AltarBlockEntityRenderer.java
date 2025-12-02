@@ -5,6 +5,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
 import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.register.block.entity.custom.AltarBlockEntity;
+import de.domenikyt1.createdomeniksmod.register.render.ModRenderTypes;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -104,7 +105,7 @@ public class AltarBlockEntityRenderer implements BlockEntityRenderer<AltarBlockE
         pPoseStack.translate(xOffset, 0f, zOffset);
 
         // Use translucent render type
-        RenderType translucentType = net.kaupenjoe.livestreammods.render.ModRenderTypes.GHOST;
+        RenderType translucentType = ModRenderTypes.GHOST;
         VertexConsumer consumer = pBufferSource.getBuffer(translucentType).setColor(1f, 1f, 1f, 0.5f);
 
         // Render the model with alpha

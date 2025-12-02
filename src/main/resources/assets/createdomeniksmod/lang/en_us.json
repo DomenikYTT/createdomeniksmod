@@ -24,6 +24,29 @@
   "item.createdomeniksmod.elementium_hammer": "Elementium Hammer",
   "item.createdomeniksmod.elementium_excavator": "Elementium Excavator",
 
+  "item.createdomeniksmod.incomplete_elementium_smithing_upgrade_template": "Incomplete Elementium Upgrade Template",
+  "item.createdomeniksmod.elementium_smithing_upgrade_template": "Elementium Upgrade Template",
+
+
+  "item.createdomeniksmod.3d_mace": "3D Mace",
+  "item.createdomeniksmod.mace_hammer": "Mace Hammer",
+  "item.createdomeniksmod.mace_splat_roller": "Splat Mace Roller",
+  "item.createdomeniksmod.astral_mace": "Astral Mace",
+  "item.createdomeniksmod.wardens_wrath_mace": "Wardens Wrath Mace",
+  "item.createdomeniksmod.silver_strike_mace": "Silver Strike Mace",
+
+  "item.createdomeniksmod.3d_elementium_mace": "3D Elementium Mace",
+  "item.createdomeniksmod.elementium_mace": "Elementium Mace",
+
+  "item.createdomeniksmod.rgb_wrench": "RGB Wrench",
+  "item.createdomeniksmod.red_wrench": "Red Wrench",
+  "item.createdomeniksmod.blue_wrench": "Blue Wrench",
+  "item.createdomeniksmod.yellow_wrench": "Yellow Wrench",
+  "item.createdomeniksmod.black_wrench": "Black Wrench",
+  "item.createdomeniksmod.green_wrench": "Green Wrench",
+  "item.createdomeniksmod.gray_wrench": "Gray Wrench",
+  "item.createdomeniksmod.pink_wrench": "Pink Wrench",
+
 
 
   "block.createdomeniksmod.fire_coal_block": "Fire Coal Block",
