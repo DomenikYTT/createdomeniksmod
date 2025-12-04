@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "P": {
+      "item": "createdomeniksmod:elementium_pickaxe"
+    },
+    "R": {
+      "item": "createdomeniksmod:elementium_rod"
+    },
+    "I": {
+      "item": "createdomeniksmod:elementium_ingot"
+    }
+  },
+  "pattern": [
+    "IPI",
+    " R ",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:elementium_hammer"
+  }
+}

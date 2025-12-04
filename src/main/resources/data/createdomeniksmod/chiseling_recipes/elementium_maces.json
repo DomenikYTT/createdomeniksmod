@@ -1,0 +1,12 @@
+{
+  "type": "rechiseled:chiseling",
+  "overwrite": false,
+  "entries": [
+    {
+      "item": "createdomeniksmod:3d_elementium_mace"
+    },
+    {
+      "item": "createdomeniksmod:elementium_mace"
+    }
+  ]
+}

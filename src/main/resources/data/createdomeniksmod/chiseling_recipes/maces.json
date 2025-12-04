@@ -1,0 +1,27 @@
+{
+  "type": "rechiseled:chiseling",
+  "overwrite": false,
+  "entries": [
+    {
+      "item": "createdomeniksmod:3d_mace"
+    },
+    {
+      "item": "createdomeniksmod:mace_hammer"
+    },
+    {
+      "item": "createdomeniksmod:mace_splat_roller"
+    },
+    {
+      "item": "createdomeniksmod:silver_strike_mace"
+    },
+    {
+      "item": "createdomeniksmod:wardens_wrath_mace"
+    },
+    {
+      "item": "createdomeniksmod:astral_mace"
+    },
+    {
+      "item": "minecraft:mace"
+    }
+  ]
+}

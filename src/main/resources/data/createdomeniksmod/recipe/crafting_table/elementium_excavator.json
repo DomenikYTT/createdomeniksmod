@@ -1,24 +1,24 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "tools",
+  "category": "building",
   "key": {
-    "I": {
-      "item": "createdomeniksmod:elementium_ingot"
+    "P": {
+      "item": "createdomeniksmod:elementium_shovel"
     },
     "R": {
       "item": "createdomeniksmod:elementium_rod"
     },
-    "B": {
-      "item": "createdomeniksmod:elementium_block"
+    "I": {
+      "item": "createdomeniksmod:elementium_ingot"
     }
   },
   "pattern": [
-    "IBI",
+    "IPI",
     " R ",
     " R "
   ],
   "result": {
     "count": 1,
-    "id": "createdomeniksmod:elementium_hammer"
+    "id": "createdomeniksmod:elementium_excavator"
   }
 }

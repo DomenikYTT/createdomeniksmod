@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "createdomeniksmod:elementium_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:elementium_chestplate"
+  },
+  "template": {
+    "item": "createdomeniksmod:elementium_smithing_upgrade_template"
+  }
+}

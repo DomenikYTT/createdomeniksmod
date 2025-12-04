@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "createdomeniksmod:elementium_ingot"
+  },
+  "base": [
+    {
+      "item": "createdomeniksmod:3d_mace"
+    },
+    {
+      "item": "createdomeniksmod:mace_hammer"
+    },
+    {
+      "item": "createdomeniksmod:mace_splat_roller"
+    },
+    {
+      "item": "createdomeniksmod:silver_strike_mace"
+    },
+    {
+      "item": "createdomeniksmod:wardens_wrath_mace"
+    },
+    {
+      "item": "createdomeniksmod:astral_mace"
+    },
+    {
+      "item": "minecraft:mace"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:elementium_mace"
+  },
+  "template": {
+    "item": "createdomeniksmod:elementium_smithing_upgrade_template"
+  }
+}

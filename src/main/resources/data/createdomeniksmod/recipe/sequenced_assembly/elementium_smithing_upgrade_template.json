@@ -1,0 +1,64 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "loops": 8,
+  "results": [
+    {
+      "id": "createdomeniksmod:elementium_smithing_upgrade_template"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_elementium_smithing_upgrade_template"
+        },
+        {
+          "type": "fluid_stack",
+          "amount": 500,
+          "fluid": "minecraft:lava"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_elementium_smithing_upgrade_template"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_elementium_smithing_upgrade_template"
+        },
+        {
+          "item": "createdomeniksmod:elementium_ingot"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:elementium_smithing_upgrade_template"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_elementium_smithing_upgrade_template"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_elementium_smithing_upgrade_template"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createdomeniksmod:incomplete_elementium_smithing_upgrade_template"
+  }
+}
