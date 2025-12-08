@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "tag": "minecraft:trim_templates"
+    },
+    "B": {
+      "tag": "minecraft:wool"
+    }
+  },
+  "pattern": [
+    " B ",
+    "B#B",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:cosmetic_smithing_template"
+  }
+}

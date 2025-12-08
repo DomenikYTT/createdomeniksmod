@@ -24,8 +24,18 @@ public class ModItems {
     public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_FIRE_COAL =
             REGISTRATE.item("incomplete_fire_coal", SequencedAssemblyItem::new).register();
 
-    public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_SMITHING_UPGRADE_TEMPLATE =
-            REGISTRATE.item("incomplete_elementium_smithing_upgrade_template", SequencedAssemblyItem::new).register();
+    public static final ItemEntry<SequencedSmithingItem> INCOMPLETE_SMITHING_UPGRADE_TEMPLATE =
+            REGISTRATE.item("incomplete_elementium_smithing_upgrade_template", SequencedSmithingItem::new).register();
+
+    public static final ItemEntry<SequencedSmithingItem> INCOMPLETE_COSMETIC_SMITHING_TEMPLATE =
+            REGISTRATE.item("incomplete_cosmetic_smithing_template", SequencedSmithingItem::new).register();
+
+
+
+
+    public static final ItemEntry<Item> COSMETIC_SMITHING_TEMPLATE =
+            REGISTRATE.item("cosmetic_smithing_template", Item::new).register();
+
 
     public static final ItemEntry<FireCoal> FIRE_COAL =
             REGISTRATE.item("fire_coal", properties -> new FireCoal(properties, 2400))

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "createdomeniksmod:elementium_ingot"
+  },
+  "base": [
+    {
+      "item": "createdomeniksmod:elementium_mace"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:3d_elementium_mace"
+  },
+  "template": {
+    "item": "createdomeniksmod:cosmetic_smithing_template"
+  }
+}

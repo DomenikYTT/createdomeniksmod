@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:clay"
+  },
+  "base": [
+    {
+      "item": "createdomeniksmod:mace_hammer"
+    },
+    {
+      "item": "createdomeniksmod:mace_splat_roller"
+    },
+    {
+      "item": "createdomeniksmod:3d_mace"
+    },
+    {
+      "item": "createdomeniksmod:wardens_wrath_mace"
+    },
+    {
+      "item": "createdomeniksmod:astral_mace"
+    },
+    {
+      "item": "minecraft:mace"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:silver_strike_mace"
+  },
+  "template": {
+    "item": "createdomeniksmod:cosmetic_smithing_template"
+  }
+}

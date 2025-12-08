@@ -1,15 +1,14 @@
 {
-  "type": "rechiseled:chiseling",
-  "overwrite": false,
-  "entries": [
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:emerald"
+  },
+  "base": [
     {
       "item": "createdomeniksmod:3d_mace"
     },
     {
       "item": "createdomeniksmod:mace_hammer"
-    },
-    {
-      "item": "createdomeniksmod:mace_splat_roller"
     },
     {
       "item": "createdomeniksmod:silver_strike_mace"
@@ -23,5 +22,12 @@
     {
       "item": "minecraft:mace"
     }
-  ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:mace_splat_roller"
+  },
+  "template": {
+    "item": "createdomeniksmod:cosmetic_smithing_template"
+  }
 }
