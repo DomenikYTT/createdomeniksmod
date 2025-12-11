@@ -6,15 +6,16 @@
 package de.domenikyt1.createdomeniksmod;
 
 import com.mojang.logging.LogUtils;
+import com.simibubi.create.foundation.data.CreateRegistrate;
 import de.domenikyt1.createdomeniksmod.datagen.CDMDatagen;
 import de.domenikyt1.createdomeniksmod.register.CreativeTabs.Tabs;
+import de.domenikyt1.createdomeniksmod.register.block.CDMBlockEntityTypes;
 import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.register.block.entity.ModBlockEntities;
 import de.domenikyt1.createdomeniksmod.register.item.CDMArmorMaterial;
 import de.domenikyt1.createdomeniksmod.register.item.ModItems;
 import de.domenikyt1.createdomeniksmod.register.recipe.ModRecipes;
 import de.domenikyt1.createdomeniksmod.register.screen.ModMenuTypes;
-import de.domenikyt1.createdomeniksmod.registry.custom.CDMRegistrate;
 import de.domenikyt1.createdomeniksmod.utils.CDMRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -37,12 +38,13 @@ import org.slf4j.Logger;
 public class CDM {
     public static final String MOD_ID = "createdomeniksmod";
     public static CDMRegistry REGISTER = new CDMRegistry("createdomeniksmod");
-    public static CDMRegistrate REGISTRATE = CDMRegistrate.create("createdomeniksmod");
+    public static CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<Item> ITEMS;
 
     public CDM(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
+        CDMBlockEntityTypes.register();
         Tabs.TAB.register(modEventBus);
         REGISTRATE.registerEventListeners(modEventBus);
         REGISTRATE.defaultCreativeTab(Tabs.BASE_TAB, "base_tab");
@@ -95,5 +97,15 @@ public class CDM {
 
     static {
         ITEMS = DeferredRegister.create(BuiltInRegistries.ITEM, "createdomeniksmod");
+    }
+
+
+
+    public static CreateRegistrate getRegistrate() {
+        return REGISTRATE;
+    }
+
+    public static ResourceLocation asResource(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
     }
 }

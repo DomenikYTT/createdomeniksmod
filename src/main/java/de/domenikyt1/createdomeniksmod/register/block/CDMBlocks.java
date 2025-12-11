@@ -3,7 +3,6 @@ package de.domenikyt1.createdomeniksmod.register.block;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllTags;
 import com.simibubi.create.foundation.data.BuilderTransformers;
-import com.tterrag.registrate.providers.loot.RegistrateBlockLootTables;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import de.domenikyt1.createdomeniksmod.register.block.custom.*;
 import de.domenikyt1.createdomeniksmod.register.item.ModItems;
@@ -141,13 +140,6 @@ public class CDMBlocks {
                     .build()
                     .register();
 
-
-    public static final BlockEntry<CustomCasingBlock> REALISM_CASING =
-            REGISTRATE.block("realism_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.REALISM_CASING))
-                    .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
-                    .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
-                    .register();
 
     public static final BlockEntry<Block> RGB_BLOCK =
             REGISTRATE.block("rgb_block", Block::new)
