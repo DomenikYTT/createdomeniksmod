@@ -1,7 +1,7 @@
 {
     "parent": "createdomeniksmod:item/3d_mace",
     "textures": {
-        "0": "createdomeniksmod:item/3d_elementium_mace",
+        "0": "createdomeniksmod:item/elementium/mace/3d_elementium_mace",
         "particle": "#0"
     }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": [],
+  "base": [
+    {
+      "item": "createdomeniksmod:rgb_casing"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:rgb_block"
+  },
+  "template": {
+    "item": "createdomeniksmod:cosmetic_smithing_template"
+  }
+}

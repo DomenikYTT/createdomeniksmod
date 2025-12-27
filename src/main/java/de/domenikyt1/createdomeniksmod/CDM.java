@@ -39,7 +39,7 @@ public class CDM {
     public static final String MOD_ID = "createdomeniksmod";
     public static CDMRegistry REGISTER = new CDMRegistry("createdomeniksmod");
     public static CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<Item> ITEMS;
 
     public CDM(IEventBus modEventBus, ModContainer modContainer) {

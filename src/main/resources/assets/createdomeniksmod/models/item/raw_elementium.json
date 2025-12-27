@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "createdomeniksmod:item/raw_elementium"
+    "layer0": "createdomeniksmod:item/elementium/raw_elementium"
   }
 }

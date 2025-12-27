@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "createdomeniksmod:item/elementium_ingot"
+    "layer0": "createdomeniksmod:item/elementium/elementium_ingot"
   }
 }

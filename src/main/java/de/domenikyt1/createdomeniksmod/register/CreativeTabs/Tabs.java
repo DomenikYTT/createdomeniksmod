@@ -4,6 +4,7 @@ import com.simibubi.create.AllCreativeModeTabs;
 import de.domenikyt1.createdomeniksmod.CDM;
 import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.register.item.custom.nottabItem;
+import de.domenikyt1.createdomeniksmod.register.item.custom.nottabhatitem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -28,7 +29,7 @@ public class Tabs {
 
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey().equals(Tabs.BASE_TAB.getKey())) for (var entry : REGISTRATE.getAll(Registries.ITEM))
-            if (entry.get() instanceof nottabItem item) event.remove(entry.get().getDefaultInstance(),
+            if (entry.get() instanceof nottabItem || entry.get() instanceof nottabhatitem) event.remove(entry.get().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }
 }

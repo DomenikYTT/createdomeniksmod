@@ -4,7 +4,14 @@
   "base": [
     {
       "item": "createdomeniksmod:3d_elementium_mace"
+    },
+    {
+      "item": "createdomeniksmod:elementium_greatsword_mace"
+    },
+    {
+      "item": "createdomeniksmod:elementium_sparkling_mace"
     }
+
   ],
   "result": {
     "count": 1,

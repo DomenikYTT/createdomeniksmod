@@ -280,6 +280,22 @@ public class ModItems {
                     .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.MACE_ENCHANTABLE)
                     .register();
 
+    public static final ItemEntry<ElementiumMaceItem> ELEMENTIUM_GREATSOWRD_MACE =
+            REGISTRATE.item("elementium_greatsword_mace", properties -> new ElementiumMaceItem(new Item.Properties(), 3, 6.0, -3.2))
+                    .properties(p -> p
+                            .durability(1000)
+                    )
+                    .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.MACE_ENCHANTABLE)
+                    .register();
+
+    public static final ItemEntry<ElementiumMaceItem> ELEMENTIUM_SPARKLING_MACE =
+            REGISTRATE.item("elementium_sparkling_mace", properties -> new ElementiumMaceItem(new Item.Properties(), 3, 6.0, -3.2))
+                    .properties(p -> p
+                            .durability(1000)
+                    )
+                    .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.MACE_ENCHANTABLE)
+                    .register();
+
 
 
 

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "createdomeniksmod:item/elementium_rod"
+    "layer0": "createdomeniksmod:item/elementium/elementium_rod"
   }
 }

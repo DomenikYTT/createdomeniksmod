@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "createdomeniksmod:item/elementium_mace"
+    "layer0": "createdomeniksmod:item/elementium/mace/elementium_mace"
   }
 }

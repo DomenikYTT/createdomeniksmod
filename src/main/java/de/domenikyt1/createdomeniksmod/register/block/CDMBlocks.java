@@ -145,7 +145,9 @@ public class CDMBlocks {
             REGISTRATE.block("rgb_block", Block::new)
                     .properties(p -> p
                             .sound(SoundType.STONE)
-                            .strength(1.5f))
+                            .strength(1.5f)
+                            .lightLevel((e) -> { return 15; })
+                    )
                     .item()
                     .build()
                     .register();

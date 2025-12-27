@@ -1,6 +1,6 @@
 {
     "parent": "createdomeniksmod:item/elementium_bow",
     "textures": {
-        "layer0": "createdomeniksmod:item/elementium_bow_pulling_1"
+        "layer0": "createdomeniksmod:item/elementium/elementium_bow_pulling_1"
     }
 }

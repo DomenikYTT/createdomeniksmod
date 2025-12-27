@@ -1,0 +1,25 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "createdomeniksmod:pictures/dev.png",
+      "ascent": 16,
+      "height": 16,
+      "chars": ["\uE001"]
+    },
+    {
+      "type": "bitmap",
+      "file": "createdomeniksmod:pictures/team.png",
+      "ascent": 16,
+      "height": 16,
+      "chars": ["\uE002"]
+    },
+    {
+      "type": "bitmap",
+      "file": "createdomeniksmod:pictures/vip.png",
+      "ascent": 16,
+      "height": 16,
+      "chars": ["\uE003"]
+    }
+  ]
+}

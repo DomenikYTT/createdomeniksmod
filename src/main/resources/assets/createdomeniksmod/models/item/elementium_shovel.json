@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "createdomeniksmod:item/elementium_shovel"
+    "layer0": "createdomeniksmod:item/elementium/tools/elementium_shovel"
   }
 }
