@@ -5,6 +5,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EntityAttachment;
 import net.minecraft.world.entity.player.Player;
@@ -18,14 +19,11 @@ import net.neoforged.neoforge.client.event.RenderNameTagEvent;
 @EventBusSubscriber(value = Dist.CLIENT)
 public class NameTagRenderHandler {
 
-
-
     @SubscribeEvent
     public static void onRenderNameTag(RenderNameTagEvent event) {
         if (!(event.getEntity() instanceof Player player)) return;
-        if (!PLAYERRANKUUIDS.isDev(player)) return;
         Vec3 vec3 = player.getAttachments().get(EntityAttachment.NAME_TAG, 0, player.getYRot());
-
+        if (Minecraft.getInstance().options.hideGui) return;
         if (vec3 != null) {
 
 
