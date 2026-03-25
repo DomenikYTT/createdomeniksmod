@@ -2,11 +2,10 @@ package de.domenikyt1.createdomeniksmod;
 
 
 import de.domenikyt1.createdomeniksmod.register.block.entity.ModBlockEntities;
-import de.domenikyt1.createdomeniksmod.register.screen.ModMenuTypes;
 import de.domenikyt1.createdomeniksmod.register.block.entity.renderer.AltarBlockEntityRenderer;
 import de.domenikyt1.createdomeniksmod.register.block.entity.renderer.PedestalBlockEntityRenderer;
-import de.domenikyt1.createdomeniksmod.register.screen.custom.PedestalScreen;
-import de.domenikyt1.createdomeniksmod.register.screen.custom.SidePedestalScreen;
+import de.domenikyt1.createdomeniksmod.register.screen.PedestalScreen;
+import de.domenikyt1.createdomeniksmod.register.screen.SidePedestalScreen;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -45,7 +44,7 @@ public class CDMClient {
 
     @SubscribeEvent
     public static void registerScreens(RegisterMenuScreensEvent event) {
-        event.register(ModMenuTypes.PEDESTAL_MENU.get(), PedestalScreen::new);
-        event.register(ModMenuTypes.SIDE_PEDESTAL_MENU.get(), SidePedestalScreen::new);
+        event.register(CDMMenuTypes.PEDESTAL_MENU.get(), PedestalScreen::new);
+        event.register(CDMMenuTypes.SIDE_PEDESTAL_MENU.get(), SidePedestalScreen::new);
     }
 }

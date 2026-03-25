@@ -1,6 +1,7 @@
 package de.domenikyt1.createdomeniksmod.register.item;
 
-import de.domenikyt1.createdomeniksmod.Tags.Blocks;
+import de.domenikyt1.createdomeniksmod.CDMItems;
+import de.domenikyt1.createdomeniksmod.CDMTags.Blocks;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -8,7 +9,7 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 
 public enum CDMToolTiers implements Tier {
-    ELEMENTIUM(Blocks.INCORRECT_FOR_ELEMENTIUM_TOOL, 2000, 10.0F, 3.0F, 28, Ingredient.of(new ItemLike[]{ModItems.ELEMENTIUM_INGOT}));
+    ELEMENTIUM(Blocks.INCORRECT_FOR_ELEMENTIUM_TOOL, 2000, 10.0F, 3.0F, 28, Ingredient.of(new ItemLike[]{CDMItems.ELEMENTIUM_INGOT}));
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int uses;

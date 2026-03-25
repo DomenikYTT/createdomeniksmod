@@ -23,7 +23,7 @@ side="BOTH"
 [[dependencies."${mod_id}"]]
 modId="cucumber"
 type="required"
-versionRange="[8.0.15,)"
+versionRange="[8.0.15, )"
 ordering="AFTER"
 side="BOTH"
 

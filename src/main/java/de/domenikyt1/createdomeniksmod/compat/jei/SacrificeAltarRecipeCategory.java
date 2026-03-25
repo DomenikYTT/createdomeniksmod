@@ -2,19 +2,17 @@ package de.domenikyt1.createdomeniksmod.compat.jei;
 
 
 import de.domenikyt1.createdomeniksmod.CDM;
-import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
-import de.domenikyt1.createdomeniksmod.register.item.ModItems;
+import de.domenikyt1.createdomeniksmod.CDMBlocks;
+import de.domenikyt1.createdomeniksmod.CDMItems;
 import de.domenikyt1.createdomeniksmod.register.recipe.PedestalRecipe;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
-import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -74,7 +72,7 @@ public class SacrificeAltarRecipeCategory implements IRecipeCategory<PedestalRec
         builder.addSlot(RecipeIngredientRole.INPUT, 7, 59).addIngredients(recipe.getIngredients().get(7));
         builder.addSlot(RecipeIngredientRole.INPUT, 1, 33).addIngredients(recipe.getIngredients().get(8));
 
-        ItemStack stack = ModItems.INFO.asStack();
+        ItemStack stack = CDMItems.INFO.asStack();
         String entityType = recipe.entityType().toString().substring(17).replace("_", " ");
         String[] words = entityType.split(" ");
         StringBuilder result = new StringBuilder();

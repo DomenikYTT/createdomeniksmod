@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    {
+      "item": "create:wrench"
+    },
+    {
+      "item": "createdomeniksmod:red_wrench"
+    },
+    {
+      "item": "createdomeniksmod:rgb_wrench"
+    },
+    {
+      "item": "createdomeniksmod:yellow_wrench"
+    },
+    {
+      "item": "createdomeniksmod:black_wrench"
+    },
+    {
+      "item": "createdomeniksmod:gray_wrench"
+    },
+    {
+      "item": "createdomeniksmod:pink_wrench"
+    },
+    {
+      "item": "createdomeniksmod:green_wrench"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:blue_wrench"
+  }
+}

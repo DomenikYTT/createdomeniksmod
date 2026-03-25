@@ -1,14 +1,13 @@
 package de.domenikyt1.createdomeniksmod.register.util;
 
-import de.domenikyt1.createdomeniksmod.register.item.ModItems;
+import de.domenikyt1.createdomeniksmod.CDMItems;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 
 public class CDMItemProperties {
     public static void addCustomItemProperties() {
-        makeCustomBow(ModItems.ELEMENTIUM_BOW.get());
+        makeCustomBow(CDMItems.ELEMENTIUM_BOW.get());
     }
 
 

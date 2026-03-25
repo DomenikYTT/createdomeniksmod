@@ -3,6 +3,8 @@ package de.domenikyt1.createdomeniksmod.register.item;
 import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
+
+import de.domenikyt1.createdomeniksmod.CDMItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
@@ -52,7 +54,7 @@ public class CDMArmorMaterial {
     static {
         ARMOR_MATERIALS = DeferredRegister.create(Registries.ARMOR_MATERIAL, "createdomeniksmod");
         ELEMENTIUM = register("elementium", new int[]{5, 10, 8, 5, 15}, 28, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.2F, () -> {
-            return Ingredient.of(new ItemLike[]{ModItems.ELEMENTIUM_INGOT});
+            return Ingredient.of(new ItemLike[]{CDMItems.ELEMENTIUM_INGOT});
         });
     }
 }

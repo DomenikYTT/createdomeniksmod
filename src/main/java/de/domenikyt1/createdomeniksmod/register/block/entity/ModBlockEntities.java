@@ -1,6 +1,6 @@
 package de.domenikyt1.createdomeniksmod.register.block.entity;
 
-import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
+import de.domenikyt1.createdomeniksmod.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.register.block.entity.custom.AltarBlockEntity;
 import de.domenikyt1.createdomeniksmod.register.block.entity.custom.PedestalBlockEntity;
 import de.domenikyt1.createdomeniksmod.CDM;

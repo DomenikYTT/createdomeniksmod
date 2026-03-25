@@ -1,7 +1,7 @@
 package de.domenikyt1.createdomeniksmod.register.block.entity.custom;
 
 import de.domenikyt1.createdomeniksmod.register.block.entity.ModBlockEntities;
-import de.domenikyt1.createdomeniksmod.register.screen.custom.PedestalMenu;
+import de.domenikyt1.createdomeniksmod.register.screen.PedestalMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;

@@ -1,13 +1,13 @@
 package de.domenikyt1.createdomeniksmod.register.block.entity.custom;
 
-import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
+import de.domenikyt1.createdomeniksmod.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.register.block.entity.ModBlockEntities;
 import de.domenikyt1.createdomeniksmod.networking.PedestalCraftCountS2C;
 import de.domenikyt1.createdomeniksmod.networking.ResetSacrificedEntityS2C;
 import de.domenikyt1.createdomeniksmod.register.recipe.ModRecipes;
 import de.domenikyt1.createdomeniksmod.register.recipe.PedestalRecipe;
 import de.domenikyt1.createdomeniksmod.register.recipe.PedestalRecipeInput;
-import de.domenikyt1.createdomeniksmod.register.screen.custom.PedestalMenu;
+import de.domenikyt1.createdomeniksmod.register.screen.PedestalMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.particles.ItemParticleOption;

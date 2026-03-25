@@ -1,7 +1,7 @@
 package de.domenikyt1.createdomeniksmod.datagen;
 
 import de.domenikyt1.createdomeniksmod.CDM;
-import de.domenikyt1.createdomeniksmod.Tags;
+import de.domenikyt1.createdomeniksmod.CDMTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -19,11 +19,11 @@ public class CDMBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
 
-        tag(Tags.Blocks.NEEDS_ELEMENTIUM_TOOL)
+        tag(CDMTags.Blocks.NEEDS_ELEMENTIUM_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
-        tag(Tags.Blocks.INCORRECT_FOR_ELEMENTIUM_TOOL)
+        tag(CDMTags.Blocks.INCORRECT_FOR_ELEMENTIUM_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
-                .remove(Tags.Blocks.NEEDS_ELEMENTIUM_TOOL);
+                .remove(CDMTags.Blocks.NEEDS_ELEMENTIUM_TOOL);
     }
 }

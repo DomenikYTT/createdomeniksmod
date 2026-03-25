@@ -2,7 +2,7 @@ package de.domenikyt1.createdomeniksmod.compat.jei;
 
 
 import de.domenikyt1.createdomeniksmod.CDM;
-import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
+import de.domenikyt1.createdomeniksmod.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.register.recipe.ModRecipes;
 import de.domenikyt1.createdomeniksmod.register.recipe.PedestalRecipe;
 import mezz.jei.api.IModPlugin;

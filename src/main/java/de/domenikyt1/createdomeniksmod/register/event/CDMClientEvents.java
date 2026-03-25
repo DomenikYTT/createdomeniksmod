@@ -2,7 +2,7 @@ package de.domenikyt1.createdomeniksmod.register.event;
 
 
 import de.domenikyt1.createdomeniksmod.CDM;
-import de.domenikyt1.createdomeniksmod.register.item.ModItems;
+import de.domenikyt1.createdomeniksmod.CDMItems;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -12,7 +12,7 @@ import net.neoforged.neoforge.client.event.ComputeFovModifierEvent;
 public class CDMClientEvents {
     @SubscribeEvent
     public static void onComputeFovModifierEvent(ComputeFovModifierEvent event) {
-        if(event.getPlayer().isUsingItem() && event.getPlayer().getUseItem().getItem() == ModItems.ELEMENTIUM_BOW.get()) {
+        if(event.getPlayer().isUsingItem() && event.getPlayer().getUseItem().getItem() == CDMItems.ELEMENTIUM_BOW.get()) {
             float fovModifier = 1f;
             int ticksUsingItem = event.getPlayer().getTicksUsingItem();
             float deltaTicks = (float)ticksUsingItem / 20f;

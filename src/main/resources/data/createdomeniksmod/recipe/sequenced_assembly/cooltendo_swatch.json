@@ -1,0 +1,104 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:plates/circuit"
+  },
+  "loops": 3,
+  "results": [
+    {
+      "id": "createdomeniksmod:cooltendo_swatch"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_cooltendo_swatch"
+        },
+        {
+          "item": "create:sturdy_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_cooltendo_swatch"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_cooltendo_swatch"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_cooltendo_swatch"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_cooltendo_swatch"
+        },
+        {
+          "tag": "c:plates/circuit"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_cooltendo_swatch"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_cooltendo_swatch"
+        },
+        {
+          "item": "create:sturdy_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_cooltendo_swatch"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_cooltendo_swatch"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_cooltendo_swatch"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_cooltendo_swatch"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_cooltendo_swatch"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createdomeniksmod:incomplete_cooltendo_swatch"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:sturdy_sheet"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "id": "createdomeniksmod:circuit_board"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_circuit_board"
+        },
+        [
+          {
+            "item": "minecraft:lime_dye"
+          },
+          {
+            "item": "minecraft:green_dye"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_circuit_board"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_circuit_board"
+        },
+        {
+          "tag": "c:plates/gold"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_circuit_board"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_circuit_board"
+        },
+        {
+          "tag": "c:plates/copper"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_circuit_board"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "createdomeniksmod:incomplete_circuit_board"
+        }
+      ],
+      "results": [
+        {
+          "id": "createdomeniksmod:incomplete_circuit_board"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "createdomeniksmod:incomplete_circuit_board"
+  }
+}

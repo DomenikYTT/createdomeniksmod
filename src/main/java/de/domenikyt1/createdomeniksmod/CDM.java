@@ -8,14 +8,9 @@ package de.domenikyt1.createdomeniksmod;
 import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import de.domenikyt1.createdomeniksmod.datagen.CDMDatagen;
-import de.domenikyt1.createdomeniksmod.register.CreativeTabs.Tabs;
-import de.domenikyt1.createdomeniksmod.register.block.CDMBlockEntityTypes;
-import de.domenikyt1.createdomeniksmod.register.block.CDMBlocks;
 import de.domenikyt1.createdomeniksmod.register.block.entity.ModBlockEntities;
 import de.domenikyt1.createdomeniksmod.register.item.CDMArmorMaterial;
-import de.domenikyt1.createdomeniksmod.register.item.ModItems;
 import de.domenikyt1.createdomeniksmod.register.recipe.ModRecipes;
-import de.domenikyt1.createdomeniksmod.register.screen.ModMenuTypes;
 import de.domenikyt1.createdomeniksmod.utils.CDMRegistry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -45,13 +40,13 @@ public class CDM {
     public CDM(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         CDMBlockEntityTypes.register();
-        Tabs.TAB.register(modEventBus);
+        CDMTabs.TAB.register(modEventBus);
         REGISTRATE.registerEventListeners(modEventBus);
-        REGISTRATE.defaultCreativeTab(Tabs.BASE_TAB, "base_tab");
+        REGISTRATE.defaultCreativeTab(CDMTabs.BASE_TAB, "base_tab");
         LOGGER.info("Loading All Creative Tabs...");
         CDMArmorMaterial.register(modEventBus);
         LOGGER.info("Loading Items...");
-        ModItems.register();
+        CDMItems.register();
         LOGGER.info("Loading Blocks");
         CDMBlocks.register();
         if (ModList.get().isLoaded("rechiseled")) {
@@ -62,9 +57,9 @@ public class CDM {
         }
 
         ModBlockEntities.register(modEventBus);
-        ModMenuTypes.register(modEventBus);
+        CDMMenuTypes.register(modEventBus);
         ModRecipes.register(modEventBus);
-        modEventBus.addListener(Tabs::addCreative);
+        modEventBus.addListener(CDMTabs::addCreative);
         modEventBus.addListener(EventPriority.HIGH, CDMDatagen::gatherData);
         NeoForge.EVENT_BUS.register(this);
         modContainer.registerConfig(Type.COMMON, Config.SPEC);
