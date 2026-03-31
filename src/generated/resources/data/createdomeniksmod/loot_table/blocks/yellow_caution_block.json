@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "createdomeniksmod:rgb_casing"
+          "name": "createdomeniksmod:yellow_caution_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "createdomeniksmod:blocks/rgb_casing"
+  "random_sequence": "createdomeniksmod:blocks/yellow_caution_block"
 }

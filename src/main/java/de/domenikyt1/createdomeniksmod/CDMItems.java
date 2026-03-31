@@ -89,31 +89,37 @@ public class CDMItems {
     public static final ItemEntry<PickaxeItem> ELEMENTIUM_PICKAXE =
             REGISTRATE.item("elementium_pickaxe", properties -> new PickaxeItem(CDMToolTiers.ELEMENTIUM, new Item.Properties().attributes(PickaxeItem.createAttributes(CDMToolTiers.ELEMENTIUM, 1, 6.8f)).stacksTo(1)))
                     .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.MINING_ENCHANTABLE)
+                    .properties(p -> p.stacksTo(1))
                     .register();
 
     public static final ItemEntry<SwordItem> ELEMENTIUM_SWORD =
             REGISTRATE.item("elementium_sword", properties -> new SwordItem(CDMToolTiers.ELEMENTIUM, new Item.Properties().attributes(SwordItem.createAttributes(CDMToolTiers.ELEMENTIUM, 10, 6f)).stacksTo(1)))
                     .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.SWORD_ENCHANTABLE)
+                    .properties(p -> p.stacksTo(1))
                     .register();
 
     public static final ItemEntry<BowItem> ELEMENTIUM_BOW =
             REGISTRATE.item("elementium_bow", properties -> new BowItem(new Item.Properties().durability(1400).stacksTo(1)))
                     .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.BOW_ENCHANTABLE)
+                    .properties(p -> p.stacksTo(1))
                     .register();
 
     public static final ItemEntry<AxeItem> ELEMENTIUM_AXE =
             REGISTRATE.item("elementium_axe", properties -> new AxeItem(CDMToolTiers.ELEMENTIUM, new Item.Properties().attributes(AxeItem.createAttributes(CDMToolTiers.ELEMENTIUM, 14, 3f))))
                     .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.MINING_ENCHANTABLE)
+                    .properties(p -> p.stacksTo(1))
                     .register();
 
     public static final ItemEntry<ShovelItem> ELEMENTIUM_SHOVEL =
             REGISTRATE.item("elementium_shovel", properties -> new ShovelItem(CDMToolTiers.ELEMENTIUM, new Item.Properties().attributes(ShovelItem.createAttributes(CDMToolTiers.ELEMENTIUM, 1, 6f)).stacksTo(1)))
                     .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.MINING_ENCHANTABLE)
+                    .properties(p -> p.stacksTo(1))
                     .register();
 
     public static final ItemEntry<HoeItem> ELEMENTIUM_HOE =
             REGISTRATE.item("elementium_hoe", properties -> new HoeItem(CDMToolTiers.ELEMENTIUM, new Item.Properties().attributes(PickaxeItem.createAttributes(CDMToolTiers.ELEMENTIUM, 1, 6f)).stacksTo(1)))
                     .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.MINING_ENCHANTABLE)
+                    .properties(p -> p.stacksTo(1))
                     .register();
 
     public static final ItemEntry<Item> ELEMENTIUM_ROD =
@@ -123,11 +129,13 @@ public class CDMItems {
     public static final ItemEntry<HammerItem> ELEMENTIUM_HAMMER =
             REGISTRATE.item("elementium_hammer", properties -> new HammerItem(CDMToolTiers.ELEMENTIUM, new Item.Properties().attributes(PickaxeItem.createAttributes(CDMToolTiers.ELEMENTIUM, 1, 6.8f)).stacksTo(1)))
                     .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.MINING_ENCHANTABLE)
+                    .properties(p -> p.stacksTo(1))
                     .register();
 
     public static final ItemEntry<ExcavatorItem> ELEMENTIUM_EXCAVATOR =
             REGISTRATE.item("elementium_excavator", properties -> new ExcavatorItem(CDMToolTiers.ELEMENTIUM, new Item.Properties().attributes(PickaxeItem.createAttributes(CDMToolTiers.ELEMENTIUM, 1, 6.8f)).stacksTo(1)))
                     .tag(ItemTags.DURABILITY_ENCHANTABLE, ItemTags.MINING_ENCHANTABLE)
+                    .properties(p -> p.stacksTo(1))
                     .register();
 
 

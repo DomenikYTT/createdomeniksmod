@@ -2,7 +2,6 @@
   "values": [
     "createdomeniksmod:fire_casing",
     "createdomeniksmod:template_casing",
-    "createdomeniksmod:rgb_casing",
     "createdomeniksmod:red_casing",
     "createdomeniksmod:blue_casing",
     "createdomeniksmod:black_casing",
@@ -18,6 +17,7 @@
     "createdomeniksmod:raw_elementium_block",
     "createdomeniksmod:elementium_block",
     "createdomeniksmod:andesite_alloy_ore",
-    "createdomeniksmod:deepslate_andesite_alloy_ore"
+    "createdomeniksmod:deepslate_andesite_alloy_ore",
+    "createdomeniksmod:yellow_caution_block"
   ]
 }

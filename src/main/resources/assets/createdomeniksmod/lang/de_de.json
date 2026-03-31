@@ -15,7 +15,6 @@
   "block.createdomeniksmod.washing_sail": "Waschendes Segel",
   "block.createdomeniksmod.fire_casing": "Feuer gehäuse",
   "block.createdomeniksmod.template_casing": "Vorlagen Gehäuse",
-  "block.createdomeniksmod.rgb_casing": "RGB Gehäuse",
   "block.createdomeniksmod.red_casing": "Rotes Gehäuse",
   "block.createdomeniksmod.gray_casing": "Graues Gehäuse",
   "block.createdomeniksmod.pink_casing": "Pinkes Gehäuse",
@@ -25,6 +24,7 @@
   "block.createdomeniksmod.raw_elementium_block": "Roh Elementium Block",
   "block.createdomeniksmod.elementium_ore": "Elementium Erz",
   "block.createdomeniksmod.elementium_block": "Elementium Block",
+  "block.createdomeniksmod.yellow_caution_block": "Gelber Warnungs Block",
 
   "item.createdomeniksmod.fire_coal": "Feuer Kohle",
   "item.createdomeniksmod.incomplete_fire_coal": "unvollständige Feuer Kohle",

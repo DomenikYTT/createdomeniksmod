@@ -1,5 +1,6 @@
 {
-  "itemGroup.createdomeniksmod": "Create: Domenik's Mod",
+  "itemGroup.createdomeniksmod.base": "C: Domenik's Mod",
+  "itemGroup.createdomeniksmod.building": "C: Domenik's Mod Building Blocks",
 
   "block.createdomeniksmod.asphalt": "Asphalt",
   "block.createdomeniksmod.andesite_alloy_ore": "Andesite Alloy Ore",
@@ -15,7 +16,6 @@
   "block.createdomeniksmod.washing_sail": "Washing Sail",
   "block.createdomeniksmod.fire_casing": "Fire Casing",
   "block.createdomeniksmod.template_casing": "Template Casing",
-  "block.createdomeniksmod.rgb_casing": "RGB Casing",
   "block.createdomeniksmod.red_casing": "Red Casing",
   "block.createdomeniksmod.gray_casing": "Gray Casing",
   "block.createdomeniksmod.pink_casing": "Pink Casing",
@@ -25,6 +25,7 @@
   "block.createdomeniksmod.raw_elementium_block": "Block of Raw Elementium",
   "block.createdomeniksmod.elementium_ore": "Elementium Ore",
   "block.createdomeniksmod.elementium_block": "Block of Elementium",
+  "block.createdomeniksmod.yellow_caution_block": "Yellow Caution Block",
 
   "item.createdomeniksmod.fire_coal": "Fire Coal",
   "item.createdomeniksmod.incomplete_fire_coal": "Incomplete Fire Coal",

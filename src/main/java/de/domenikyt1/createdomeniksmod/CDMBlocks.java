@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.neoforged.neoforge.common.Tags;
@@ -41,14 +42,6 @@ public class CDMBlocks {
             REGISTRATE.block("template_casing", CustomCasingBlock::new)
                     .transform(BuilderTransformers.casing(() -> CDMTextureShifts.TEMPLATE_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.STONE).forceSolidOff())
-                    .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
-                    .register();
-
-
-    public static final BlockEntry<CustomCasingBlock> RGB_CASING =
-            REGISTRATE.block("rgb_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.RGB_CASING))
-                    .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
 
@@ -139,8 +132,8 @@ public class CDMBlocks {
                     .register();
 
 
-    public static final BlockEntry<Block> RGB_BLOCK =
-            REGISTRATE.block("rgb_block", Block::new)
+    public static final BlockEntry<BuildingBlock> RGB_BLOCK =
+            REGISTRATE.block("rgb_block", BuildingBlock::new)
                     .properties(p -> p
                             .sound(SoundType.STONE)
                             .strength(1.5f)
@@ -173,8 +166,8 @@ public class CDMBlocks {
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.WINDMILL_SAILS.tag, AllTags.AllBlockTags.FAN_TRANSPARENT.tag, AllTags.AllBlockTags.FAN_PROCESSING_CATALYSTS_BLASTING.tag)
                     .register();
 
-    public static final BlockEntry<Block> FIRE_COAL_BLOCK =
-            REGISTRATE.block("fire_coal_block", Block::new)
+    public static final BlockEntry<BuildingBlock> FIRE_COAL_BLOCK =
+            REGISTRATE.block("fire_coal_block", BuildingBlock::new)
                     .properties(p -> p.sound(SoundType.STONE))
                     .item()
                     .build()
@@ -189,8 +182,8 @@ public class CDMBlocks {
                     .tag(BlockTags.MINEABLE_WITH_PICKAXE, BlockTags.NEEDS_STONE_TOOL)
                     .register();
 
-    public static final BlockEntry<Block> ELEMENTIUM_ORE =
-            REGISTRATE.block("elementium_ore", Block::new)
+    public static final BlockEntry<BuildingBlock> ELEMENTIUM_ORE =
+            REGISTRATE.block("elementium_ore", BuildingBlock::new)
                     .properties(p -> p.strength(1.75f, 1.0f)
                             .sound(SoundType.METAL)
                             .requiresCorrectToolForDrops()
@@ -208,8 +201,8 @@ public class CDMBlocks {
                     .tag(BlockTags.NEEDS_IRON_TOOL, Tags.Blocks.ORES_IN_GROUND_STONE, Tags.Blocks.ORES, BlockTags.MINEABLE_WITH_PICKAXE)
                     .register();
 
-    public static final BlockEntry<Block> DEEPSLATE_ELEMENTIUM_ORE =
-            REGISTRATE.block("deepslate_elementium_ore", Block::new)
+    public static final BlockEntry<BuildingBlock> DEEPSLATE_ELEMENTIUM_ORE =
+            REGISTRATE.block("deepslate_elementium_ore", BuildingBlock::new)
                     .properties(p -> p.strength(1.75f, 1.0f)
                             .sound(SoundType.METAL)
                             .requiresCorrectToolForDrops()
@@ -228,8 +221,8 @@ public class CDMBlocks {
 
                     .register();
 
-    public static final BlockEntry<Block> RAW_ELEMENTIUM_BLOCK =
-            REGISTRATE.block("raw_elementium_block", Block::new)
+    public static final BlockEntry<BuildingBlock> RAW_ELEMENTIUM_BLOCK =
+            REGISTRATE.block("raw_elementium_block", BuildingBlock::new)
                     .properties(p -> p.strength(1.75f, 1.0f)
                             .sound(SoundType.METAL)
                             .requiresCorrectToolForDrops()
@@ -239,8 +232,8 @@ public class CDMBlocks {
                     .tag(BlockTags.NEEDS_IRON_TOOL, BlockTags.MINEABLE_WITH_PICKAXE)
                     .register();
 
-    public static final BlockEntry<Block> ELEMENTIUM_BLOCK =
-            REGISTRATE.block("elementium_block", Block::new)
+    public static final BlockEntry<BuildingBlock> ELEMENTIUM_BLOCK =
+            REGISTRATE.block("elementium_block", BuildingBlock::new)
                     .properties(p -> p.strength(1.75f, 1.0f)
                             .sound(SoundType.METAL)
                             .requiresCorrectToolForDrops()
@@ -250,8 +243,8 @@ public class CDMBlocks {
                     .tag(BlockTags.NEEDS_IRON_TOOL, BlockTags.MINEABLE_WITH_PICKAXE)
                     .register();
 
-    public static final BlockEntry<Block> ANDESITE_ALLOY_ORE =
-            REGISTRATE.block("andesite_alloy_ore", Block::new)
+    public static final BlockEntry<BuildingBlock> ANDESITE_ALLOY_ORE =
+            REGISTRATE.block("andesite_alloy_ore", BuildingBlock::new)
                     .tag(BlockTags.MINEABLE_WITH_PICKAXE, BlockTags.NEEDS_STONE_TOOL, Tags.Blocks.ORES, Tags.Blocks.ORES_IN_GROUND_STONE)
                     .loot((lt, b) -> {
                         HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
@@ -263,12 +256,12 @@ public class CDMBlocks {
                     })
                     .simpleItem()
                     .properties(p -> p
-                            .strength(1.5f, 0.5f)
+                            .strength(1.5f, 0.5f).requiresCorrectToolForDrops()
                     )
                     .register();
 
-    public static final BlockEntry<Block> DEEPSLATE_ANDESITE_ALLOY_ORE =
-            REGISTRATE.block("deepslate_andesite_alloy_ore", Block::new)
+    public static final BlockEntry<BuildingBlock> DEEPSLATE_ANDESITE_ALLOY_ORE =
+            REGISTRATE.block("deepslate_andesite_alloy_ore", BuildingBlock::new)
                     .tag(BlockTags.MINEABLE_WITH_PICKAXE, BlockTags.NEEDS_STONE_TOOL, Tags.Blocks.ORES, Tags.Blocks.ORES_IN_GROUND_DEEPSLATE)
                     .loot((lt, b) -> {
                         HolderLookup.RegistryLookup<Enchantment> enchantmentRegistryLookup = lt.getRegistries().lookupOrThrow(Registries.ENCHANTMENT);
@@ -279,11 +272,20 @@ public class CDMBlocks {
                                                 .apply(ApplyBonusCount.addOreBonusCount(enchantmentRegistryLookup.getOrThrow(Enchantments.FORTUNE))))));
                     })
                     .properties(p -> p
-                            .strength(1.5f, 0.5f)
+                            .strength(1.5f, 0.5f).requiresCorrectToolForDrops()
                     )
                     .simpleItem()
                     .register();
 
+    public static final BlockEntry<BuildingBlock> YELLOW_CAUTION_BLOCK =
+            REGISTRATE.block("yellow_caution_block", BuildingBlock::new)
+                    .properties(p -> p.pushReaction(PushReaction.BLOCK)
+                            .requiresCorrectToolForDrops()
+                            .strength(2.5F, 2.0F)
+                    )
+                    .item().build()
+                    .tag(BlockTags.MINEABLE_WITH_PICKAXE, BlockTags.NEEDS_STONE_TOOL)
+                    .register();
 
     protected static String getItemName(ItemLike pItemLike) {
         return BuiltInRegistries.ITEM.getKey(pItemLike.asItem()).getPath();
