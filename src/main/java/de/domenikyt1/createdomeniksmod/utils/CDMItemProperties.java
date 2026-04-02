@@ -1,4 +1,4 @@
-package de.domenikyt1.createdomeniksmod.register.util;
+package de.domenikyt1.createdomeniksmod.utils;
 
 import de.domenikyt1.createdomeniksmod.CDMItems;
 import net.minecraft.client.renderer.item.ItemProperties;

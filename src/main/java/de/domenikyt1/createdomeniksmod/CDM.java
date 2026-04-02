@@ -42,6 +42,7 @@ public class CDM {
         CDMBlockEntityTypes.register();
         CDMTabs.TAB.register(modEventBus);
         REGISTRATE.registerEventListeners(modEventBus);
+
         REGISTRATE.defaultCreativeTab(CDMTabs.BASE_TAB, "base_tab");
         LOGGER.info("Loading All Creative Tabs...");
         CDMArmorMaterial.register(modEventBus);
@@ -49,12 +50,6 @@ public class CDM {
         CDMItems.register();
         LOGGER.info("Loading Blocks");
         CDMBlocks.register();
-        if (ModList.get().isLoaded("rechiseled")) {
-            LOGGER.info("Loading Rechiseled Compat...");
-        } else {
-            LOGGER.info("Rechiseled is not intsalled...");
-            LOGGER.info("Skipping Rechiseled Compat...");
-        }
 
         ModBlockEntities.register(modEventBus);
         CDMMenuTypes.register(modEventBus);

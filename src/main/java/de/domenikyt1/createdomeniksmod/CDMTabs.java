@@ -30,7 +30,7 @@ public class CDMTabs {
             .withTabsBefore(AllCreativeModeTabs.PALETTES_CREATIVE_TAB.getKey())
             .icon(CDMItems.CIRCUIT_BOARD::asStack)
             .build());
-    
+
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BUILDING_TAB = TAB.register("building_tab", () -> CreativeModeTab.builder()
             .title(Component.translatableWithFallback("itemGroup.createdomeniksmod.building", MOD_ID + " Building"))
             .withTabsBefore(CDMTabs.BASE_TAB.getKey())

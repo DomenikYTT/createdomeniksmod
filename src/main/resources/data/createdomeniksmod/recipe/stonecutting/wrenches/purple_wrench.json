@@ -8,10 +8,10 @@
       "item": "createdomeniksmod:red_wrench"
     },
     {
-      "item": "createdomeniksmod:rgb_wrench"
+      "item": "createdomeniksmod:blue_wrench"
     },
     {
-      "item": "createdomeniksmod:yellow_wrench"
+      "item": "createdomeniksmod:rgb_wrench"
     },
     {
       "item": "createdomeniksmod:black_wrench"
@@ -24,10 +24,13 @@
     },
     {
       "item": "createdomeniksmod:green_wrench"
+    },
+    {
+      "item": "createdomeniksmod:yellow_wrench"
     }
   ],
   "result": {
     "count": 1,
-    "id": "createdomeniksmod:blue_wrench"
+    "id": "createdomeniksmod:purple_wrench"
   }
 }

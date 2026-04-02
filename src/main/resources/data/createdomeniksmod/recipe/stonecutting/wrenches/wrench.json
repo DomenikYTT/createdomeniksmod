@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "ingredient": [
     {
-      "item": "create:wrench"
+      "item": "createdomeniksmod:rgb_wrench"
     },
     {
       "item": "createdomeniksmod:red_wrench"
@@ -24,10 +24,13 @@
     },
     {
       "item": "createdomeniksmod:green_wrench"
+    },
+    {
+      "item": "createdomeniksmod:purple_wrench"
     }
   ],
   "result": {
     "count": 1,
-    "id": "createdomeniksmod:rgb_wrench"
+    "id": "create:wrench"
   }
 }

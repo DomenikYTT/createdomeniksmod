@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    {
+      "item": "createdomeniksmod:elementium_ingot"
+    },
+    {
+      "item": "createdomeniksmod:elementium_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:elementium_block"
+  }
+}

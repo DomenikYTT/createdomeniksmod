@@ -218,6 +218,9 @@ public class CDMItems {
     public static final ItemEntry<WrenchItem> BLACK_WRENCH =
             REGISTRATE.item("black_wrench", WrenchItem::new).register();
 
+    public static final ItemEntry<WrenchItem> PURPLE_WRENCH =
+            REGISTRATE.item("purple_wrench", WrenchItem::new).register();
+
 
     public static final ItemEntry<MaceItem> MACE_3D_0 =
             REGISTRATE.item("3d_mace", MaceItem::new)

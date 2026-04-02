@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    {
+      "item": "createdomeniksmod:wizzard_hat"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "createdomeniksmod:bandana"
+  }
+}

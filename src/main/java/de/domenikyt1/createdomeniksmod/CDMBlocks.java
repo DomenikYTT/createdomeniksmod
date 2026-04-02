@@ -1,7 +1,6 @@
 package de.domenikyt1.createdomeniksmod;
 
 import com.simibubi.create.AllTags;
-import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import de.domenikyt1.createdomeniksmod.register.block.*;
 import de.domenikyt1.createdomeniksmod.registry.custom.CDMTextureShifts;
@@ -12,7 +11,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -32,7 +30,7 @@ public class CDMBlocks {
     /*      CASINGS     */
     public static final BlockEntry<CustomCasingBlock> FIRE_CASING =
             REGISTRATE.block("fire_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.FIRE_CASING))
+                    .transform(com.simibubi.create.foundation.data.BuilderTransformers.casing(() -> CDMTextureShifts.FIRE_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.STONE).forceSolidOff())
                     .transform(axeOrPickaxe())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
@@ -40,56 +38,56 @@ public class CDMBlocks {
 
     public static final BlockEntry<CustomCasingBlock> TEMPLATE_CASING =
             REGISTRATE.block("template_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.TEMPLATE_CASING))
+                    .transform(com.simibubi.create.foundation.data.BuilderTransformers.casing(() -> CDMTextureShifts.TEMPLATE_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.STONE).forceSolidOff())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
 
     public static final BlockEntry<CustomCasingBlock> RED_CASING =
             REGISTRATE.block("red_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.RED_CASING))
+                    .transform(com.simibubi.create.foundation.data.BuilderTransformers.casing(() -> CDMTextureShifts.RED_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
 
     public static final BlockEntry<CustomCasingBlock> BLUE_CASING =
             REGISTRATE.block("blue_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.BLUE_CASING))
+                    .transform(com.simibubi.create.foundation.data.BuilderTransformers.casing(() -> CDMTextureShifts.BLUE_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
 
     public static final BlockEntry<CustomCasingBlock> BLACK_CASING =
             REGISTRATE.block("black_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.BLACK_CASING))
+                    .transform(com.simibubi.create.foundation.data.BuilderTransformers.casing(() -> CDMTextureShifts.BLACK_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
 
     public static final BlockEntry<CustomCasingBlock> GRAY_CASING =
             REGISTRATE.block("gray_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.GRAY_CASING))
+                    .transform(com.simibubi.create.foundation.data.BuilderTransformers.casing(() -> CDMTextureShifts.GRAY_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
 
     public static final BlockEntry<CustomCasingBlock> PINK_CASING =
             REGISTRATE.block("pink_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.PINK_CASING))
+                    .transform(com.simibubi.create.foundation.data.BuilderTransformers.casing(() -> CDMTextureShifts.PINK_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
 
     public static final BlockEntry<CustomCasingBlock> YELLOW_CASING =
             REGISTRATE.block("yellow_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.YELLOW_CASING))
+                    .transform(com.simibubi.create.foundation.data.BuilderTransformers.casing(() -> CDMTextureShifts.YELLOW_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();
 
     public static final BlockEntry<CustomCasingBlock> LIME_CASING =
             REGISTRATE.block("lime_casing", CustomCasingBlock::new)
-                    .transform(BuilderTransformers.casing(() -> CDMTextureShifts.LIME_CASING))
+                    .transform(com.simibubi.create.foundation.data.BuilderTransformers.casing(() -> CDMTextureShifts.LIME_CASING))
                     .properties(p -> p.mapColor(MapColor.TERRACOTTA_LIGHT_BLUE).sound(SoundType.WOOD).forceSolidOff())
                     .tag(AllTags.AllBlockTags.WRENCH_PICKUP.tag, AllTags.AllBlockTags.CASING.tag)
                     .register();

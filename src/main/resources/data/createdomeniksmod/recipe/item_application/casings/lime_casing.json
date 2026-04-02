@@ -1,0 +1,18 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    [
+      {
+        "tag": "c:stripped_logs"
+      }
+    ],
+    {
+      "tag": "c:dyes/lime"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdomeniksmod:lime_casing"
+    }
+  ]
+}

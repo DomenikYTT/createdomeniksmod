@@ -1,0 +1,18 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    [
+      {
+        "tag": "c:stripped_logs"
+      }
+    ],
+    {
+      "tag": "c:dyes/white"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdomeniksmod:template_casing"
+    }
+  ]
+}

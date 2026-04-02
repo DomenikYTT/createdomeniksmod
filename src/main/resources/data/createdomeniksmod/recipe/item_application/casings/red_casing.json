@@ -1,0 +1,18 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    [
+      {
+        "tag": "c:stripped_logs"
+      }
+    ],
+    {
+      "tag": "c:dyes/red"
+    }
+  ],
+  "results": [
+    {
+      "id": "createdomeniksmod:red_casing"
+    }
+  ]
+}

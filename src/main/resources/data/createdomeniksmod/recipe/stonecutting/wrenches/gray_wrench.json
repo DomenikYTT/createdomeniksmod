@@ -17,17 +17,20 @@
       "item": "createdomeniksmod:black_wrench"
     },
     {
-      "item": "createdomeniksmod:gray_wrench"
+      "item": "createdomeniksmod:rgb_wrench"
     },
     {
       "item": "createdomeniksmod:pink_wrench"
     },
     {
-      "item": "createdomeniksmod:rgb_wrench"
+      "item": "createdomeniksmod:green_wrench"
+    },
+    {
+      "item": "createdomeniksmod:purple_wrench"
     }
   ],
   "result": {
     "count": 1,
-    "id": "createdomeniksmod:green_wrench"
+    "id": "createdomeniksmod:gray_wrench"
   }
 }
