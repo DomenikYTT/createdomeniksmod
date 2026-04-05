@@ -18,7 +18,8 @@ versionRange="${neo_version_range}"
 ordering="AFTER"
 side="BOTH"
 
-
+[[mixins]]
+config="cdm.mixins.json"
 
 [[dependencies."${mod_id}"]]
 modId="cucumber"

@@ -188,38 +188,55 @@ public class CDMItems {
 
     public static final ItemEntry<WrenchItem> RGB_WRENCH =
             REGISTRATE.item("rgb_wrench", WrenchItem::new)
+                    .tag(Tags.Items.TOOLS_WRENCH)
                     .register();
 
 
     public static final ItemEntry<WrenchItem> RED_WRENCH =
-            REGISTRATE.item("red_wrench", WrenchItem::new).register();
+            REGISTRATE.item("red_wrench", WrenchItem::new)
+                    .tag(Tags.Items.TOOLS_WRENCH)
+                    .register();
 
 
     public static final ItemEntry<WrenchItem> BLUE_WRENCH =
-            REGISTRATE.item("blue_wrench", WrenchItem::new).register();
+            REGISTRATE.item("blue_wrench", WrenchItem::new)
+                    .tag(Tags.Items.TOOLS_WRENCH)
+                    .register();
 
 
     public static final ItemEntry<WrenchItem> YELLOW_WRENCH =
-            REGISTRATE.item("yellow_wrench", WrenchItem::new).register();
+            REGISTRATE.item("yellow_wrench", WrenchItem::new)
+                    .tag(Tags.Items.TOOLS_WRENCH)
+                    .register();
 
 
     public static final ItemEntry<WrenchItem> PINK_WRENCH =
-            REGISTRATE.item("pink_wrench", WrenchItem::new).register();
+            REGISTRATE.item("pink_wrench", WrenchItem::new)
+                    .tag(Tags.Items.TOOLS_WRENCH)
+                    .register();
 
 
     public static final ItemEntry<WrenchItem> GRAY_WRENCH =
-            REGISTRATE.item("gray_wrench", WrenchItem::new).register();
+            REGISTRATE.item("gray_wrench", WrenchItem::new)
+                    .tag(Tags.Items.TOOLS_WRENCH)
+                    .register();
 
 
     public static final ItemEntry<WrenchItem> GREEN_WRENCH =
-            REGISTRATE.item("green_wrench", WrenchItem::new).register();
+            REGISTRATE.item("green_wrench", WrenchItem::new)
+                    .tag(Tags.Items.TOOLS_WRENCH)
+                    .register();
 
 
     public static final ItemEntry<WrenchItem> BLACK_WRENCH =
-            REGISTRATE.item("black_wrench", WrenchItem::new).register();
+            REGISTRATE.item("black_wrench", WrenchItem::new)
+                    .tag(Tags.Items.TOOLS_WRENCH)
+                    .register();
 
     public static final ItemEntry<WrenchItem> PURPLE_WRENCH =
-            REGISTRATE.item("purple_wrench", WrenchItem::new).register();
+            REGISTRATE.item("purple_wrench", WrenchItem::new)
+                    .tag(Tags.Items.TOOLS_WRENCH)
+                    .register();
 
 
     public static final ItemEntry<MaceItem> MACE_3D_0 =
